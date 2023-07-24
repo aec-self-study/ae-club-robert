@@ -3,7 +3,6 @@
 )}}
 
 select
-
 C.id
 ,C.name
 ,C.email 
