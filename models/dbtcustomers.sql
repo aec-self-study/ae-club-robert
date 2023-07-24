@@ -2,7 +2,7 @@
     materialized= 'table'
 )}}
 
-select 
+select
 
 C.id
 ,C.name
