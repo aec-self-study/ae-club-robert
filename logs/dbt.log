@@ -1,0 +1,1000 @@
+[0m10:06:44.988606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f434a7a63b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43494ca500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43494c9db0>]}
+
+
+============================== 10:06:44.991232 | d3f3d39b-bba8-4a8b-8dd2-136e77131d2a ==============================
+[0m10:06:44.991232 [info ] [MainThread]: Running with dbt=1.5.3
+[0m10:06:44.991983 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:06:45.394366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f434a37b550>]}
+[0m10:06:45.411645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43479b5540>]}
+[0m10:06:45.412467 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m10:06:45.424021 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m10:06:45.424619 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:06:45.425201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43479b45e0>]}
+[0m10:06:46.124726 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers.sql
+[0m10:06:46.246929 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m10:06:46.253124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43478f3df0>]}
+[0m10:06:46.260211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f434737b730>]}
+[0m10:06:46.260704 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:06:46.261267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43478f3a00>]}
+[0m10:06:46.262790 [info ] [MainThread]: 
+[0m10:06:46.264057 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:06:46.265698 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m10:06:46.266202 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:06:47.440734 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now create_aec-students_dbt_robert)
+[0m10:06:47.441863 [debug] [ThreadPool]: Creating schema "database: "aec-students"
+schema: "dbt_robert"
+"
+[0m10:06:47.452547 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:06:47.453001 [debug] [ThreadPool]: On create_aec-students_dbt_robert: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "connection_name": "create_aec-students_dbt_robert"} */
+create schema if not exists `aec-students`.`dbt_robert`
+  
+[0m10:06:50.115833 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:EU:76e022bf-8bb6-4cfa-8095-bae50be26cf8&page=queryresults
+[0m10:06:50.118987 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_aec-students_dbt_robert, now list_aec-students_dbt_robert)
+[0m10:06:50.119706 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:06:50.288308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f434737a440>]}
+[0m10:06:50.289297 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:06:50.289898 [info ] [MainThread]: 
+[0m10:06:50.324403 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m10:06:50.325094 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_robert.dbtcustomers ............................ [RUN]
+[0m10:06:50.326134 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now model.coffee_shop.dbtcustomers)
+[0m10:06:50.326568 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m10:06:50.329271 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m10:06:50.330147 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 10:06:50.326841 => 10:06:50.329850
+[0m10:06:50.330573 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m10:06:50.364124 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m10:06:50.364934 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:06:50.365405 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+
+  create or replace view `aec-students`.`dbt_robert`.`dbtcustomers`
+  OPTIONS()
+  as select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+--I've acceted your change.local
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5;
+
+
+[0m10:06:50.625834 [debug] [Thread-1 (]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+
+  create or replace view `aec-students`.`dbt_robert`.`dbtcustomers`
+  OPTIONS()
+  as select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+--I've acceted your change.local
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5;
+
+
+[0m10:06:50.626545 [debug] [Thread-1 (]: BigQuery adapter: 404 Not found: Dataset analytics-engineers-club:coffee_shop was not found in location EU
+
+Location: EU
+Job ID: 7c247f8d-9b5c-478d-a065-a8f53c0c4677
+
+[0m10:06:50.627225 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 10:06:50.330896 => 10:06:50.626982
+[0m10:06:50.641042 [debug] [Thread-1 (]: Runtime Error in model dbtcustomers (models/dbtcustomers.sql)
+  404 Not found: Dataset analytics-engineers-club:coffee_shop was not found in location EU
+  
+  Location: EU
+  Job ID: 7c247f8d-9b5c-478d-a065-a8f53c0c4677
+  
+[0m10:06:50.641598 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd3f3d39b-bba8-4a8b-8dd2-136e77131d2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4347432ce0>]}
+[0m10:06:50.642320 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_robert.dbtcustomers ................... [[31mERROR[0m in 0.32s]
+[0m10:06:50.643138 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m10:06:50.645834 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:06:50.646224 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m10:06:50.646574 [info ] [MainThread]: 
+[0m10:06:50.647306 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.38 seconds (4.38s).
+[0m10:06:50.648489 [debug] [MainThread]: Command end result
+[0m10:06:50.655899 [info ] [MainThread]: 
+[0m10:06:50.656647 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:06:50.657322 [info ] [MainThread]: 
+[0m10:06:50.657889 [error] [MainThread]: [33mRuntime Error in model dbtcustomers (models/dbtcustomers.sql)[0m
+[0m10:06:50.658593 [error] [MainThread]:   404 Not found: Dataset analytics-engineers-club:coffee_shop was not found in location EU
+[0m10:06:50.659309 [error] [MainThread]:   
+[0m10:06:50.659922 [error] [MainThread]:   Location: EU
+[0m10:06:50.660613 [error] [MainThread]:   Job ID: 7c247f8d-9b5c-478d-a065-a8f53c0c4677
+[0m10:06:50.661281 [error] [MainThread]:   
+[0m10:06:50.661933 [info ] [MainThread]: 
+[0m10:06:50.662718 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m10:06:50.663929 [debug] [MainThread]: Command `dbt run` failed at 10:06:50.663722 after 5.68 seconds
+[0m10:06:50.664630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f434a7a63b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43479d06d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f434742bcd0>]}
+[0m10:06:50.665201 [debug] [MainThread]: Flushing usage events
+[0m10:07:22.061426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02a2612350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02a189e4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02a189e440>]}
+
+
+============================== 10:07:22.064003 | 02a29ace-2f2e-48f9-8069-ea9f87c5568e ==============================
+[0m10:07:22.064003 [info ] [MainThread]: Running with dbt=1.5.3
+[0m10:07:22.064741 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'log_path': '/home/vscode/dbt_robert_project/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:07:22.431918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '02a29ace-2f2e-48f9-8069-ea9f87c5568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02a24f5900>]}
+[0m10:07:22.449166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '02a29ace-2f2e-48f9-8069-ea9f87c5568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029f9e16c0>]}
+[0m10:07:22.449916 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m10:07:22.461581 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m10:07:22.505692 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:07:22.506098 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:07:22.506602 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m10:07:22.513405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '02a29ace-2f2e-48f9-8069-ea9f87c5568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029f7a80d0>]}
+[0m10:07:22.521894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '02a29ace-2f2e-48f9-8069-ea9f87c5568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029f8c6b00>]}
+[0m10:07:22.522425 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:07:22.522982 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02a29ace-2f2e-48f9-8069-ea9f87c5568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029f8c6b90>]}
+[0m10:07:22.524388 [info ] [MainThread]: 
+[0m10:07:22.525778 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:07:22.527409 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m10:07:22.527882 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:07:23.624191 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert)
+[0m10:07:23.624955 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:07:23.792919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '02a29ace-2f2e-48f9-8069-ea9f87c5568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029f8c61d0>]}
+[0m10:07:23.794232 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:07:23.795017 [info ] [MainThread]: 
+[0m10:07:23.799784 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m10:07:23.800518 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_robert.dbtcustomers ............................ [RUN]
+[0m10:07:23.801589 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now model.coffee_shop.dbtcustomers)
+[0m10:07:23.802052 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m10:07:23.804586 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m10:07:23.805396 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 10:07:23.802483 => 10:07:23.805093
+[0m10:07:23.805804 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m10:07:23.837671 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m10:07:23.838468 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:07:23.838948 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+
+  create or replace view `aec-students`.`dbt_robert`.`dbtcustomers`
+  OPTIONS()
+  as select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+--I've acceted your change.local
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5;
+
+
+[0m10:07:24.095621 [debug] [Thread-1 (]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+
+  create or replace view `aec-students`.`dbt_robert`.`dbtcustomers`
+  OPTIONS()
+  as select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+--I've acceted your change.local
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5;
+
+
+[0m10:07:24.096612 [debug] [Thread-1 (]: BigQuery adapter: 404 Not found: Dataset analytics-engineers-club:coffee_shop was not found in location EU
+
+Location: EU
+Job ID: 02718f24-1bbd-4fec-a8b1-5c9b73e2ed5a
+
+[0m10:07:24.098808 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 10:07:23.806100 => 10:07:24.098434
+[0m10:07:24.106495 [debug] [Thread-1 (]: Runtime Error in model dbtcustomers (models/dbtcustomers.sql)
+  404 Not found: Dataset analytics-engineers-club:coffee_shop was not found in location EU
+  
+  Location: EU
+  Job ID: 02718f24-1bbd-4fec-a8b1-5c9b73e2ed5a
+  
+[0m10:07:24.107424 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '02a29ace-2f2e-48f9-8069-ea9f87c5568e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029f76a350>]}
+[0m10:07:24.108404 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_robert.dbtcustomers ................... [[31mERROR[0m in 0.31s]
+[0m10:07:24.109740 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m10:07:24.112150 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:07:24.112498 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m10:07:24.112877 [info ] [MainThread]: 
+[0m10:07:24.113429 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.59 seconds (1.59s).
+[0m10:07:24.120658 [debug] [MainThread]: Command end result
+[0m10:07:24.139130 [info ] [MainThread]: 
+[0m10:07:24.139877 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:07:24.140563 [info ] [MainThread]: 
+[0m10:07:24.141230 [error] [MainThread]: [33mRuntime Error in model dbtcustomers (models/dbtcustomers.sql)[0m
+[0m10:07:24.141918 [error] [MainThread]:   404 Not found: Dataset analytics-engineers-club:coffee_shop was not found in location EU
+[0m10:07:24.142770 [error] [MainThread]:   
+[0m10:07:24.143435 [error] [MainThread]:   Location: EU
+[0m10:07:24.144093 [error] [MainThread]:   Job ID: 02718f24-1bbd-4fec-a8b1-5c9b73e2ed5a
+[0m10:07:24.144747 [error] [MainThread]:   
+[0m10:07:24.145404 [info ] [MainThread]: 
+[0m10:07:24.146154 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m10:07:24.147294 [debug] [MainThread]: Command `dbt run` failed at 10:07:24.147112 after 2.09 seconds
+[0m10:07:24.147922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02a2612350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f02a255c5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f029f790f10>]}
+[0m10:07:24.148560 [debug] [MainThread]: Flushing usage events
+[0m10:08:02.128144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41505de2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414f4c6440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414f4c63e0>]}
+
+
+============================== 10:08:02.132290 | 9211df28-cd2a-45f1-a6fc-c7317b54ec94 ==============================
+[0m10:08:02.132290 [info ] [MainThread]: Running with dbt=1.5.3
+[0m10:08:02.134230 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:08:02.500137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41505153c0>]}
+[0m10:08:02.517487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d9b1d20>]}
+[0m10:08:02.518249 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m10:08:02.529503 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m10:08:02.537087 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m10:08:02.537773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d9c9270>]}
+[0m10:08:03.279529 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers.sql
+[0m10:08:03.328663 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m10:08:03.334723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d913fa0>]}
+[0m10:08:03.341586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d3ba2f0>]}
+[0m10:08:03.342268 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:08:03.342833 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d9ca410>]}
+[0m10:08:03.344303 [info ] [MainThread]: 
+[0m10:08:03.345538 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:08:03.346844 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m10:08:03.347604 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:08:04.484287 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert)
+[0m10:08:04.484921 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:08:04.626352 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414dd651b0>]}
+[0m10:08:04.627437 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:08:04.628057 [info ] [MainThread]: 
+[0m10:08:04.632591 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m10:08:04.633202 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_robert.dbtcustomers ............................ [RUN]
+[0m10:08:04.634177 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now model.coffee_shop.dbtcustomers)
+[0m10:08:04.634634 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m10:08:04.637101 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m10:08:04.637896 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 10:08:04.635014 => 10:08:04.637597
+[0m10:08:04.638338 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m10:08:04.669356 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m10:08:04.670201 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:08:04.670717 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+
+  create or replace view `aec-students`.`dbt_robert`.`dbtcustomers`
+  OPTIONS()
+  as select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+--I've acceted your change.local
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5;
+
+
+[0m10:08:04.994452 [debug] [Thread-1 (]: BigQuery adapter: Unhandled error while running:
+/* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+
+  create or replace view `aec-students`.`dbt_robert`.`dbtcustomers`
+  OPTIONS()
+  as select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+--I've acceted your change.local
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5;
+
+
+[0m10:08:04.995198 [debug] [Thread-1 (]: BigQuery adapter: 404 Not found: Dataset aec-students:dbt_robert was not found in location US
+
+Location: US
+Job ID: c7837a60-a6c4-4ae6-b45e-a2c30430e0a1
+
+[0m10:08:04.996026 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 10:08:04.638608 => 10:08:04.995736
+[0m10:08:05.000077 [debug] [Thread-1 (]: Runtime Error in model dbtcustomers (models/dbtcustomers.sql)
+  404 Not found: Dataset aec-students:dbt_robert was not found in location US
+  
+  Location: US
+  Job ID: c7837a60-a6c4-4ae6-b45e-a2c30430e0a1
+  
+[0m10:08:05.000714 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9211df28-cd2a-45f1-a6fc-c7317b54ec94', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d3ce1d0>]}
+[0m10:08:05.001559 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model dbt_robert.dbtcustomers ................... [[31mERROR[0m in 0.37s]
+[0m10:08:05.002542 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m10:08:05.005046 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:08:05.005391 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m10:08:05.005732 [info ] [MainThread]: 
+[0m10:08:05.006336 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.66 seconds (1.66s).
+[0m10:08:05.007243 [debug] [MainThread]: Command end result
+[0m10:08:05.018144 [info ] [MainThread]: 
+[0m10:08:05.018770 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m10:08:05.019354 [info ] [MainThread]: 
+[0m10:08:05.019949 [error] [MainThread]: [33mRuntime Error in model dbtcustomers (models/dbtcustomers.sql)[0m
+[0m10:08:05.020451 [error] [MainThread]:   404 Not found: Dataset aec-students:dbt_robert was not found in location US
+[0m10:08:05.020965 [error] [MainThread]:   
+[0m10:08:05.021532 [error] [MainThread]:   Location: US
+[0m10:08:05.022177 [error] [MainThread]:   Job ID: c7837a60-a6c4-4ae6-b45e-a2c30430e0a1
+[0m10:08:05.022657 [error] [MainThread]:   
+[0m10:08:05.023151 [info ] [MainThread]: 
+[0m10:08:05.023689 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m10:08:05.024566 [debug] [MainThread]: Command `dbt run` failed at 10:08:05.024432 after 2.91 seconds
+[0m10:08:05.025013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41505de2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d913f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414d9495d0>]}
+[0m10:08:05.025501 [debug] [MainThread]: Flushing usage events
+[0m10:09:20.312262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae6c946380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae6b70e4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae6b70e470>]}
+
+
+============================== 10:09:20.315815 | ffccc335-c91b-4e5e-a6d1-80fa743a288a ==============================
+[0m10:09:20.315815 [info ] [MainThread]: Running with dbt=1.5.3
+[0m10:09:20.316610 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:09:20.737468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae69db73a0>]}
+[0m10:09:20.754663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae69dfbdc0>]}
+[0m10:09:20.755422 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m10:09:20.766771 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m10:09:20.774444 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m10:09:20.775054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae6c6731f0>]}
+[0m10:09:21.547070 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers.sql
+[0m10:09:21.595010 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m10:09:21.601370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae69b5ffa0>]}
+[0m10:09:21.608998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae69c05060>]}
+[0m10:09:21.609527 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:09:21.610172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae69c05bd0>]}
+[0m10:09:21.611690 [info ] [MainThread]: 
+[0m10:09:21.612956 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:09:21.614680 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m10:09:21.615178 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:09:22.741004 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now create_aec-students_dbt_robert_project)
+[0m10:09:22.742134 [debug] [ThreadPool]: Creating schema "database: "aec-students"
+schema: "dbt_robert_project"
+"
+[0m10:09:22.752243 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:09:22.752732 [debug] [ThreadPool]: On create_aec-students_dbt_robert_project: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "connection_name": "create_aec-students_dbt_robert_project"} */
+create schema if not exists `aec-students`.`dbt_robert_project`
+  
+[0m10:09:24.048840 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:d7547e22-d899-4757-80a2-ce67a3f01f01&page=queryresults
+[0m10:09:24.051304 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_aec-students_dbt_robert_project, now list_aec-students_dbt_robert_project)
+[0m10:09:24.051884 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:09:24.362371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae69c995d0>]}
+[0m10:09:24.363589 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:09:24.364512 [info ] [MainThread]: 
+[0m10:09:24.371189 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m10:09:24.371799 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_robert_project.dbtcustomers .................... [RUN]
+[0m10:09:24.372718 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_project, now model.coffee_shop.dbtcustomers)
+[0m10:09:24.373141 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m10:09:24.375552 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m10:09:24.376353 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 10:09:24.373407 => 10:09:24.376053
+[0m10:09:24.376765 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m10:09:24.402976 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m10:09:24.403682 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:09:24.404139 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+
+  create or replace view `aec-students`.`dbt_robert_project`.`dbtcustomers`
+  OPTIONS()
+  as select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+--I've acceted your change.local
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5;
+
+
+[0m10:09:25.585222 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:c98746ec-1ef5-4ba4-888c-3e794e9faf14&page=queryresults
+[0m10:09:25.600979 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 10:09:24.377030 => 10:09:25.600747
+[0m10:09:25.601842 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ffccc335-c91b-4e5e-a6d1-80fa743a288a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae696aff10>]}
+[0m10:09:25.602589 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_robert_project.dbtcustomers ............... [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m10:09:25.603548 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m10:09:25.605370 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:09:25.605716 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m10:09:25.606111 [info ] [MainThread]: 
+[0m10:09:25.606698 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 3.99 seconds (3.99s).
+[0m10:09:25.607549 [debug] [MainThread]: Command end result
+[0m10:09:25.621550 [info ] [MainThread]: 
+[0m10:09:25.622430 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:09:25.623019 [info ] [MainThread]: 
+[0m10:09:25.623866 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:09:25.624853 [debug] [MainThread]: Command `dbt run` succeeded at 10:09:25.624726 after 5.32 seconds
+[0m10:09:25.625237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae6c946380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae69ba1600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fae6c6fd2a0>]}
+[0m10:09:25.625816 [debug] [MainThread]: Flushing usage events
+[0m10:18:26.497665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5d242320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5c1c6470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5c1c6410>]}
+
+
+============================== 10:18:26.500394 | 72ac2fa6-32ff-4140-a2c5-8a6f7427d92a ==============================
+[0m10:18:26.500394 [info ] [MainThread]: Running with dbt=1.5.3
+[0m10:18:26.501376 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:18:26.882090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '72ac2fa6-32ff-4140-a2c5-8a6f7427d92a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5d174b20>]}
+[0m10:18:26.899957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '72ac2fa6-32ff-4140-a2c5-8a6f7427d92a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5a6b1c60>]}
+[0m10:18:26.900803 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m10:18:26.912372 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m10:18:26.936130 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:18:26.936757 [debug] [MainThread]: Partial parsing: updated file: coffee_shop://models/dbtcustomers.sql
+[0m10:18:26.961681 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers.sql
+[0m10:18:26.979583 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m10:18:26.985583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '72ac2fa6-32ff-4140-a2c5-8a6f7427d92a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5a4d80d0>]}
+[0m10:18:26.992642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '72ac2fa6-32ff-4140-a2c5-8a6f7427d92a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5a596920>]}
+[0m10:18:26.993308 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:18:26.993883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72ac2fa6-32ff-4140-a2c5-8a6f7427d92a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5a5942e0>]}
+[0m10:18:26.995427 [info ] [MainThread]: 
+[0m10:18:26.996667 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m10:18:26.998227 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m10:18:26.998868 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:18:28.281161 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert_project)
+[0m10:18:28.281880 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m10:18:28.586902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '72ac2fa6-32ff-4140-a2c5-8a6f7427d92a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5a595d20>]}
+[0m10:18:28.587973 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m10:18:28.588734 [info ] [MainThread]: 
+[0m10:18:28.595342 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m10:18:28.596312 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_robert_project.dbtcustomers ................... [RUN]
+[0m10:18:28.597314 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_project, now model.coffee_shop.dbtcustomers)
+[0m10:18:28.597814 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m10:18:28.601691 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m10:18:28.602627 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 10:18:28.598305 => 10:18:28.602270
+[0m10:18:28.603105 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m10:18:28.622086 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:18:29.415200 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m10:18:29.416364 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_project`.`dbtcustomers`
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5
+    );
+  
+[0m10:18:33.767500 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:19a6c54c-09ef-4d73-8649-72dbe2e79a2d&page=queryresults
+[0m10:18:33.787433 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 10:18:28.603433 => 10:18:33.787207
+[0m10:18:33.788345 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '72ac2fa6-32ff-4140-a2c5-8a6f7427d92a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5a4dbe80>]}
+[0m10:18:33.789122 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_robert_project.dbtcustomers .............. [[32mCREATE TABLE (5.0 rows, 28.2 MiB processed)[0m in 5.19s]
+[0m10:18:33.790291 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m10:18:33.792146 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:18:33.792527 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m10:18:33.792943 [info ] [MainThread]: 
+[0m10:18:33.793713 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 6.80 seconds (6.80s).
+[0m10:18:33.794964 [debug] [MainThread]: Command end result
+[0m10:18:33.802352 [info ] [MainThread]: 
+[0m10:18:33.803088 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:18:33.803792 [info ] [MainThread]: 
+[0m10:18:33.804409 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m10:18:33.805597 [debug] [MainThread]: Command `dbt run` succeeded at 10:18:33.805395 after 7.32 seconds
+[0m10:18:33.806131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5d242320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5a4f37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbd5d00d600>]}
+[0m10:18:33.806593 [debug] [MainThread]: Flushing usage events
+[0m13:10:35.114006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a3184e320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a307c6470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a307c6410>]}
+
+
+============================== 13:10:35.118366 | 6555086d-f820-42e9-a51f-584d3708bcff ==============================
+[0m13:10:35.118366 [info ] [MainThread]: Running with dbt=1.5.3
+[0m13:10:35.119175 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/logs', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m13:10:36.481055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6555086d-f820-42e9-a51f-584d3708bcff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a31784b20>]}
+[0m13:10:36.498703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6555086d-f820-42e9-a51f-584d3708bcff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2ecb1570>]}
+[0m13:10:36.499599 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m13:10:36.510450 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m13:10:36.582703 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:10:36.583112 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:10:36.583580 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m13:10:36.590075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6555086d-f820-42e9-a51f-584d3708bcff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2ea7c0d0>]}
+[0m13:10:36.596322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6555086d-f820-42e9-a51f-584d3708bcff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2eb96c80>]}
+[0m13:10:36.596988 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m13:10:36.597571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6555086d-f820-42e9-a51f-584d3708bcff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2eb96d10>]}
+[0m13:10:36.598929 [info ] [MainThread]: 
+[0m13:10:36.599892 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:10:36.601192 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m13:10:36.601637 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:10:40.940487 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert_project)
+[0m13:10:40.941078 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:10:41.246485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6555086d-f820-42e9-a51f-584d3708bcff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2eb96380>]}
+[0m13:10:41.247336 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m13:10:41.247843 [info ] [MainThread]: 
+[0m13:10:41.268519 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m13:10:41.269134 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_robert_project.dbtcustomers ................... [RUN]
+[0m13:10:41.269995 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_project, now model.coffee_shop.dbtcustomers)
+[0m13:10:41.270379 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m13:10:41.274721 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m13:10:41.275433 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 13:10:41.270611 => 13:10:41.275172
+[0m13:10:41.275848 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m13:10:41.290519 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:10:41.668556 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m13:10:41.669340 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_project`.`dbtcustomers`
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5
+    );
+  
+[0m13:10:45.979184 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:1ffcae61-2acd-41bf-b94e-f36787b7ad29&page=queryresults
+[0m13:10:45.995994 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 13:10:41.276121 => 13:10:45.995790
+[0m13:10:45.996764 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6555086d-f820-42e9-a51f-584d3708bcff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2ec35360>]}
+[0m13:10:45.997400 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_robert_project.dbtcustomers .............. [[32mCREATE TABLE (5.0 rows, 28.2 MiB processed)[0m in 4.73s]
+[0m13:10:45.998369 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m13:10:46.000150 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:10:46.000456 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m13:10:46.000748 [info ] [MainThread]: 
+[0m13:10:46.001300 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 9.40 seconds (9.40s).
+[0m13:10:46.002365 [debug] [MainThread]: Command end result
+[0m13:10:46.008856 [info ] [MainThread]: 
+[0m13:10:46.009535 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:10:46.010351 [info ] [MainThread]: 
+[0m13:10:46.010995 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:10:46.011901 [debug] [MainThread]: Command `dbt run` succeeded at 13:10:46.011724 after 10.91 seconds
+[0m13:10:46.012300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a3184e320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a2ea57fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a3161f880>]}
+[0m13:10:46.012672 [debug] [MainThread]: Flushing usage events
+[0m13:11:41.492933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc50ff1e3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc50eec6500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc50eec64a0>]}
+
+
+============================== 13:11:41.495349 | f2c47c2b-dfa7-48ca-8dc3-ce6f3eb67c90 ==============================
+[0m13:11:41.495349 [info ] [MainThread]: Running with dbt=1.5.3
+[0m13:11:41.496133 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m13:11:41.499223 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'coffee_shop'
+[0m13:11:41.500013 [debug] [MainThread]: Command `dbt run` failed at 13:11:41.499889 after 0.01 seconds
+[0m13:11:41.500371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc50ff1e3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc50eec7af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc50eec7790>]}
+[0m13:11:41.500734 [debug] [MainThread]: Flushing usage events
+[0m13:11:54.702209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c5702a3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c55e0e530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c55e0e4d0>]}
+
+
+============================== 13:11:54.704653 | 8c1ade12-7918-4c59-abcb-65e2ff16ff89 ==============================
+[0m13:11:54.704653 [info ] [MainThread]: Running with dbt=1.5.3
+[0m13:11:54.705400 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/logs', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m13:11:55.028084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8c1ade12-7918-4c59-abcb-65e2ff16ff89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c56ddb730>]}
+[0m13:11:55.045319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8c1ade12-7918-4c59-abcb-65e2ff16ff89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c544e1420>]}
+[0m13:11:55.045985 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m13:11:55.056841 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m13:11:55.079014 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:11:55.079361 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:11:55.079779 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m13:11:55.085939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8c1ade12-7918-4c59-abcb-65e2ff16ff89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c542a80d0>]}
+[0m13:11:55.092341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8c1ade12-7918-4c59-abcb-65e2ff16ff89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c543c6980>]}
+[0m13:11:55.093051 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m13:11:55.093929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c1ade12-7918-4c59-abcb-65e2ff16ff89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c543c6a10>]}
+[0m13:11:55.095770 [info ] [MainThread]: 
+[0m13:11:55.097121 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:11:55.098680 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m13:11:55.099166 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:11:56.372955 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert_project)
+[0m13:11:56.373700 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:11:56.679022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8c1ade12-7918-4c59-abcb-65e2ff16ff89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c543c5e40>]}
+[0m13:11:56.679895 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m13:11:56.680416 [info ] [MainThread]: 
+[0m13:11:56.683956 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m13:11:56.684514 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_robert_project.dbtcustomers ................... [RUN]
+[0m13:11:56.685343 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_project, now model.coffee_shop.dbtcustomers)
+[0m13:11:56.685900 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m13:11:56.689261 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m13:11:56.690038 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 13:11:56.686245 => 13:11:56.689762
+[0m13:11:56.690412 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m13:11:56.705100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:11:57.091429 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m13:11:57.092207 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_project`.`dbtcustomers`
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5
+    );
+  
+[0m13:12:00.918060 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:5a3b89b8-e51f-4f50-b44d-115a34fc6c70&page=queryresults
+[0m13:12:00.935301 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 13:11:56.690641 => 13:12:00.935096
+[0m13:12:00.936254 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8c1ade12-7918-4c59-abcb-65e2ff16ff89', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c542690f0>]}
+[0m13:12:00.937072 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_robert_project.dbtcustomers .............. [[32mCREATE TABLE (5.0 rows, 28.2 MiB processed)[0m in 4.25s]
+[0m13:12:00.937958 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m13:12:00.939841 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:12:00.940166 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m13:12:00.940461 [info ] [MainThread]: 
+[0m13:12:00.940960 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.84 seconds (5.84s).
+[0m13:12:00.941973 [debug] [MainThread]: Command end result
+[0m13:12:00.947653 [info ] [MainThread]: 
+[0m13:12:00.948339 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:12:00.948978 [info ] [MainThread]: 
+[0m13:12:00.949501 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m13:12:00.950557 [debug] [MainThread]: Command `dbt run` succeeded at 13:12:00.950386 after 6.26 seconds
+[0m13:12:00.950948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c5702a3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c542985b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6c56bdeda0>]}
+[0m13:12:00.951309 [debug] [MainThread]: Flushing usage events
+[0m15:59:32.556194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa53763b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa45fe500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa45fe4a0>]}
+
+
+============================== 15:59:32.572681 | aa96382f-bc55-4ce9-b79d-842d2d2d1e34 ==============================
+[0m15:59:32.572681 [info ] [MainThread]: Running with dbt=1.5.3
+[0m15:59:32.573664 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m15:59:34.154669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aa96382f-bc55-4ce9-b79d-842d2d2d1e34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa5147550>]}
+[0m15:59:34.172438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aa96382f-bc55-4ce9-b79d-842d2d2d1e34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa27e1570>]}
+[0m15:59:34.173625 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m15:59:34.187713 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m15:59:34.291023 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:59:34.291568 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:59:34.292218 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m15:59:34.299790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aa96382f-bc55-4ce9-b79d-842d2d2d1e34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa25ac0d0>]}
+[0m15:59:34.308067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aa96382f-bc55-4ce9-b79d-842d2d2d1e34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa26c6cb0>]}
+[0m15:59:34.308624 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m15:59:34.309194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aa96382f-bc55-4ce9-b79d-842d2d2d1e34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa26c6c50>]}
+[0m15:59:34.310740 [info ] [MainThread]: 
+[0m15:59:34.311973 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m15:59:34.313389 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m15:59:34.314013 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:59:39.182652 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert_project)
+[0m15:59:39.183317 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:59:39.524974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aa96382f-bc55-4ce9-b79d-842d2d2d1e34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa26c63b0>]}
+[0m15:59:39.526214 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m15:59:39.527134 [info ] [MainThread]: 
+[0m15:59:39.556650 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m15:59:39.557426 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_robert_project.dbtcustomers ................... [RUN]
+[0m15:59:39.558365 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_project, now model.coffee_shop.dbtcustomers)
+[0m15:59:39.558831 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m15:59:39.563832 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m15:59:39.564702 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 15:59:39.559126 => 15:59:39.564367
+[0m15:59:39.565170 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m15:59:39.580642 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:39.939577 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m15:59:39.940594 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_project`.`dbtcustomers`
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select 
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5
+    );
+  
+[0m15:59:44.802789 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:07adbfac-085c-4015-9d61-f87522f650ca&page=queryresults
+[0m15:59:44.820108 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 15:59:39.565501 => 15:59:44.819869
+[0m15:59:44.821076 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aa96382f-bc55-4ce9-b79d-842d2d2d1e34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa25693c0>]}
+[0m15:59:44.821879 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_robert_project.dbtcustomers .............. [[32mCREATE TABLE (5.0 rows, 28.2 MiB processed)[0m in 5.26s]
+[0m15:59:44.823142 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m15:59:44.824978 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:59:44.825346 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m15:59:44.825750 [info ] [MainThread]: 
+[0m15:59:44.827296 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 10.51 seconds (10.51s).
+[0m15:59:44.829115 [debug] [MainThread]: Command end result
+[0m15:59:44.836893 [info ] [MainThread]: 
+[0m15:59:44.837700 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:59:44.838445 [info ] [MainThread]: 
+[0m15:59:44.839236 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:59:44.840399 [debug] [MainThread]: Command `dbt run` succeeded at 15:59:44.840257 after 12.32 seconds
+[0m15:59:44.840849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa53763b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa27e1570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8aa26c6e90>]}
+[0m15:59:44.841395 [debug] [MainThread]: Flushing usage events
+[0m16:10:57.613434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05dd7be410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05dc6ca560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05dc6ca500>]}
+
+
+============================== 16:10:57.616191 | b592f707-cb9e-445b-9129-a8d15ffcefbd ==============================
+[0m16:10:57.616191 [info ] [MainThread]: Running with dbt=1.5.3
+[0m16:10:57.617240 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/logs', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:10:57.986257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b592f707-cb9e-445b-9129-a8d15ffcefbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05dd71f460>]}
+[0m16:10:58.003601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b592f707-cb9e-445b-9129-a8d15ffcefbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05dabb15a0>]}
+[0m16:10:58.004524 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m16:10:58.016120 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m16:10:58.040424 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:10:58.041050 [debug] [MainThread]: Partial parsing: updated file: coffee_shop://models/dbtcustomers.sql
+[0m16:10:58.066201 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers.sql
+[0m16:10:58.084290 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m16:10:58.091843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b592f707-cb9e-445b-9129-a8d15ffcefbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05da9d40d0>]}
+[0m16:10:58.102574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b592f707-cb9e-445b-9129-a8d15ffcefbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05daa96c80>]}
+[0m16:10:58.103314 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:10:58.104057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b592f707-cb9e-445b-9129-a8d15ffcefbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05daa96d10>]}
+[0m16:10:58.105949 [info ] [MainThread]: 
+[0m16:10:58.107277 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:10:58.109754 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m16:10:58.111693 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:10:59.498308 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert_project)
+[0m16:10:59.498977 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:10:59.849696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b592f707-cb9e-445b-9129-a8d15ffcefbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05daa940d0>]}
+[0m16:10:59.850913 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:10:59.851774 [info ] [MainThread]: 
+[0m16:10:59.856624 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m16:10:59.857284 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_robert_project.dbtcustomers ................... [RUN]
+[0m16:10:59.858380 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_project, now model.coffee_shop.dbtcustomers)
+[0m16:10:59.858856 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m16:10:59.862323 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m16:10:59.863321 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 16:10:59.859157 => 16:10:59.862926
+[0m16:10:59.863758 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m16:10:59.882683 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:11:00.254785 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m16:11:00.255810 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_project`.`dbtcustomers`
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5
+    );
+  
+[0m16:11:07.996676 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:e80dd278-9088-4e21-b85a-bc58ec54b9be&page=queryresults
+[0m16:11:08.013959 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 16:10:59.864054 => 16:11:08.013694
+[0m16:11:08.014886 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b592f707-cb9e-445b-9129-a8d15ffcefbd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05da9d4310>]}
+[0m16:11:08.015642 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_robert_project.dbtcustomers .............. [[32mCREATE TABLE (5.0 rows, 28.2 MiB processed)[0m in 8.16s]
+[0m16:11:08.016635 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m16:11:08.018516 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:11:08.018882 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m16:11:08.019282 [info ] [MainThread]: 
+[0m16:11:08.019847 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 9.91 seconds (9.91s).
+[0m16:11:08.020811 [debug] [MainThread]: Command end result
+[0m16:11:08.035402 [info ] [MainThread]: 
+[0m16:11:08.036187 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:11:08.037188 [info ] [MainThread]: 
+[0m16:11:08.038208 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:11:08.039348 [debug] [MainThread]: Command `dbt run` succeeded at 16:11:08.039213 after 10.43 seconds
+[0m16:11:08.039789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05dd7be410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05da9f3e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f05dd586b30>]}
+[0m16:11:08.040524 [debug] [MainThread]: Flushing usage events
+[0m16:12:40.173603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43ac682380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43ab3ce4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43ab3ce470>]}
+
+
+============================== 16:12:40.176372 | 5fc66ebb-16db-42e7-8ab1-6c52a1357ca7 ==============================
+[0m16:12:40.176372 [info ] [MainThread]: Running with dbt=1.5.3
+[0m16:12:40.177172 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:12:40.547999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43ac3be020>]}
+[0m16:12:40.565731 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43a98b7820>]}
+[0m16:12:40.566695 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m16:12:40.578488 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m16:12:40.586439 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m16:12:40.587167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43ac1b71f0>]}
+[0m16:12:41.359056 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers.sql
+[0m16:12:41.408673 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_robert.example
+[0m16:12:41.415115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43a9817fa0>]}
+[0m16:12:41.423059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43a92bc820>]}
+[0m16:12:41.423799 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:12:41.424398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43a92bd270>]}
+[0m16:12:41.426006 [info ] [MainThread]: 
+[0m16:12:41.427252 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:12:41.429000 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m16:12:41.429538 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:12:42.808990 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now create_aec-students_dbt_robert)
+[0m16:12:42.810259 [debug] [ThreadPool]: Creating schema "database: "aec-students"
+schema: "dbt_robert"
+"
+[0m16:12:42.821552 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:12:42.822078 [debug] [ThreadPool]: On create_aec-students_dbt_robert: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "connection_name": "create_aec-students_dbt_robert"} */
+create schema if not exists `aec-students`.`dbt_robert`
+  
+[0m16:12:44.127791 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:a61d83da-fc6c-4387-ade8-e8082da491b3&page=queryresults
+[0m16:12:44.130947 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert'
+[0m16:12:44.131695 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:12:44.461614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43a9873a30>]}
+[0m16:12:44.462756 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:12:44.463413 [info ] [MainThread]: 
+[0m16:12:44.468142 [debug] [Thread-1 (]: Began running node model.coffee_shop.dbtcustomers
+[0m16:12:44.468769 [info ] [Thread-1 (]: 1 of 1 START sql table model dbt_robert.dbtcustomers ........................... [RUN]
+[0m16:12:44.469725 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now model.coffee_shop.dbtcustomers)
+[0m16:12:44.470187 [debug] [Thread-1 (]: Began compiling node model.coffee_shop.dbtcustomers
+[0m16:12:44.474323 [debug] [Thread-1 (]: Writing injected SQL for node "model.coffee_shop.dbtcustomers"
+[0m16:12:44.475246 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (compile): 16:12:44.470536 => 16:12:44.474848
+[0m16:12:44.475690 [debug] [Thread-1 (]: Began executing node model.coffee_shop.dbtcustomers
+[0m16:12:44.510123 [debug] [Thread-1 (]: Writing runtime sql for node "model.coffee_shop.dbtcustomers"
+[0m16:12:44.511037 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:12:44.511538 [debug] [Thread-1 (]: On model.coffee_shop.dbtcustomers: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "model.coffee_shop.dbtcustomers"} */
+
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert`.`dbtcustomers`
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+select
+
+C.id
+,C.name
+,C.email 
+,MIN(O.created_at) as first_order_at
+,COUNT(O.id) as number_of_orders
+
+from `analytics-engineers-club.coffee_shop.customers` as C
+left join `analytics-engineers-club.coffee_shop.orders` as O on C.id = O.customer_id
+
+GROUP BY
+C.id
+,C.name
+,C.email
+
+order by first_order_at limit 5
+    );
+  
+[0m16:12:49.004845 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:f206e033-d11e-420d-8e79-e31bcdd05ecb&page=queryresults
+[0m16:12:49.020393 [debug] [Thread-1 (]: Timing info for model.coffee_shop.dbtcustomers (execute): 16:12:44.475983 => 16:12:49.020171
+[0m16:12:49.021317 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5fc66ebb-16db-42e7-8ab1-6c52a1357ca7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43a932c1c0>]}
+[0m16:12:49.022092 [info ] [Thread-1 (]: 1 of 1 OK created sql table model dbt_robert.dbtcustomers ...................... [[32mCREATE TABLE (5.0 rows, 28.2 MiB processed)[0m in 4.55s]
+[0m16:12:49.023295 [debug] [Thread-1 (]: Finished running node model.coffee_shop.dbtcustomers
+[0m16:12:49.025541 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:12:49.025910 [debug] [MainThread]: Connection 'create_aec-students_dbt_robert' was properly closed.
+[0m16:12:49.026280 [debug] [MainThread]: Connection 'model.coffee_shop.dbtcustomers' was properly closed.
+[0m16:12:49.026669 [info ] [MainThread]: 
+[0m16:12:49.027224 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 7.60 seconds (7.60s).
+[0m16:12:49.029085 [debug] [MainThread]: Command end result
+[0m16:12:49.044480 [info ] [MainThread]: 
+[0m16:12:49.045126 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:12:49.045746 [info ] [MainThread]: 
+[0m16:12:49.046847 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:12:49.048051 [debug] [MainThread]: Command `dbt run` succeeded at 16:12:49.047721 after 8.88 seconds
+[0m16:12:49.048701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43ac682380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43ac1b6860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f43a9817f70>]}
+[0m16:12:49.049381 [debug] [MainThread]: Flushing usage events
