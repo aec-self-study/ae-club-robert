@@ -3,6 +3,7 @@
 )}}
 
 select
+--latest one 1
 C.id
 ,C.name
 ,C.email 
