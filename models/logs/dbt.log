@@ -1,0 +1,483 @@
+[0m11:02:24.453015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efecd082350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efecbe0a4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efecbe0a440>]}
+
+
+============================== 11:02:24.455756 | 027ccdd5-961b-4b14-bc8f-904ad13e29df ==============================
+[0m11:02:24.455756 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:02:24.456584 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:02:24.789983 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:02:24.791076 [debug] [MainThread]: Command `dbt test` failed at 11:02:24.790898 after 0.35 seconds
+[0m11:02:24.791537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efecd082350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efeca4faf20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efeca4fa860>]}
+[0m11:02:24.792050 [debug] [MainThread]: Flushing usage events
+[0m11:03:52.421997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6185ede380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6184dc64d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6184dc6470>]}
+
+
+============================== 11:03:52.424695 | 4bc45fce-80b2-4624-8b40-0138bb3bfb33 ==============================
+[0m11:03:52.424695 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:03:52.425497 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:03:52.753441 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:03:52.754494 [debug] [MainThread]: Command `dbt test` failed at 11:03:52.754345 after 0.34 seconds
+[0m11:03:52.754961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6185ede380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61832b6f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61832b6da0>]}
+[0m11:03:52.755493 [debug] [MainThread]: Flushing usage events
+[0m11:07:07.315281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ad5a6380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ac2ca4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ac2ca470>]}
+
+
+============================== 11:07:07.318410 | 22d89b2d-f18c-48f4-9508-007f92dc8b59 ==============================
+[0m11:07:07.318410 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:07:07.319366 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:07:07.671478 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:07:07.672613 [debug] [MainThread]: Command `dbt test` failed at 11:07:07.672454 after 0.37 seconds
+[0m11:07:07.673107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6ad5a6380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6aa7bef20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa6aa7bc220>]}
+[0m11:07:07.673902 [debug] [MainThread]: Flushing usage events
+[0m11:08:29.083463 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc24ba8e3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc24a7d25c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc24a7d2530>]}
+
+
+============================== 11:08:29.086245 | d5053971-89c3-42c9-b123-0fbd185caa89 ==============================
+[0m11:08:29.086245 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:08:29.087235 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:08:29.419348 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:08:29.420613 [debug] [MainThread]: Command `dbt test` failed at 11:08:29.420448 after 0.34 seconds
+[0m11:08:29.421096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc24ba8e3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc248cc6ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc248cc6d70>]}
+[0m11:08:29.421681 [debug] [MainThread]: Flushing usage events
+[0m11:08:35.033502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cc165a2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cc040a4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cc040a410>]}
+
+
+============================== 11:08:35.036158 | 6bb6e244-7007-4da3-a594-614ffb90c618 ==============================
+[0m11:08:35.036158 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:08:35.036962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:08:35.381677 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:08:35.382777 [debug] [MainThread]: Command `dbt test` failed at 11:08:35.382623 after 0.36 seconds
+[0m11:08:35.383249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cc165a2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbeb06ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbeb06e00>]}
+[0m11:08:35.383761 [debug] [MainThread]: Flushing usage events
+[0m11:09:06.488661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac60cb62f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac5fbc6440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac5fbc63e0>]}
+
+
+============================== 11:09:06.491299 | 32cca10c-7c89-4213-a912-d80659d9e5fd ==============================
+[0m11:09:06.491299 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:09:06.492137 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:09:06.845912 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:09:06.847021 [debug] [MainThread]: Command `dbt test` failed at 11:09:06.846864 after 0.37 seconds
+[0m11:09:06.847483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac60cb62f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac5e0b6e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fac5e0b6c20>]}
+[0m11:09:06.848014 [debug] [MainThread]: Flushing usage events
+[0m11:11:30.856690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3387dfe320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3386b0e470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3386b0e410>]}
+
+
+============================== 11:11:30.859309 | 3a780fbf-ef73-4bc3-ae79-f7d8111f9ea4 ==============================
+[0m11:11:30.859309 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:11:30.860140 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:11:30.861540 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  /home/vscode/.dbt/profiles.yml
+  
+[0m11:11:30.862580 [debug] [MainThread]: Command `dbt test` failed at 11:11:30.862449 after 0.01 seconds
+[0m11:11:30.863006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3387dfe320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3386b0e530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3386b0e6e0>]}
+[0m11:11:30.863503 [debug] [MainThread]: Flushing usage events
+[0m11:12:52.741089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1012572380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f101130e4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f101130e470>]}
+
+
+============================== 11:12:52.743675 | 188bcd1b-2c77-480b-9995-c33772949bd2 ==============================
+[0m11:12:52.743675 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:12:52.744498 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:12:53.134825 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:12:53.135986 [debug] [MainThread]: Command `dbt test` failed at 11:12:53.135761 after 0.40 seconds
+[0m11:12:53.136673 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1012572380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f100f9f0130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f100f9f2fb0>]}
+[0m11:12:53.137344 [debug] [MainThread]: Flushing usage events
+[0m11:14:19.685060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc939e2e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc938df24a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc938df2440>]}
+
+
+============================== 11:14:19.687663 | cf95c2a2-4ebe-491f-ac63-ff517b57f33d ==============================
+[0m11:14:19.687663 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:14:19.688487 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:14:20.037071 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'description': 'Cleaned up data for our customers', 'columns': [{'name': 'id', 'description': 'Primary key of the model', 'tests': ['unique', 'not_null']}]}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:14:20.038523 [debug] [MainThread]: Command `dbt test` failed at 11:14:20.038381 after 0.36 seconds
+[0m11:14:20.038992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc939e2e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9372e8e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc9372eb490>]}
+[0m11:14:20.039544 [debug] [MainThread]: Flushing usage events
+[0m11:20:25.388418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4cb86963b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4cb75f2500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4cb75f24a0>]}
+
+
+============================== 11:20:25.391136 | c1801760-af34-4614-bd36-aec1ae1b908c ==============================
+[0m11:20:25.391136 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:20:25.391965 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:20:25.732344 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'description': 'Cleaned up data for our customers', 'columns': [{'name': 'id', 'description': 'Primary key of the model', 'tests': ['unique', 'not_null']}]}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:20:25.733447 [debug] [MainThread]: Command `dbt test` failed at 11:20:25.733288 after 0.35 seconds
+[0m11:20:25.733912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4cb86963b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4cb5ae8e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4cb5ae8e20>]}
+[0m11:20:25.734422 [debug] [MainThread]: Flushing usage events
+[0m11:23:01.232204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff378e4a350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff377bce4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff377bce440>]}
+
+
+============================== 11:23:01.234948 | 4b9c520f-ed17-414d-a6ec-a1789e1ca3cf ==============================
+[0m11:23:01.234948 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:23:01.235768 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:23:01.592165 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'description': 'Cleaned up data for our customers', 'columns': [{'name': 'id', 'description': 'Primary key of the model', 'tests': ['unique', 'not_null']}]}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:23:01.593374 [debug] [MainThread]: Command `dbt test` failed at 11:23:01.593194 after 0.37 seconds
+[0m11:23:01.593968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff378e4a350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3760b6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3760b5e70>]}
+[0m11:23:01.594523 [debug] [MainThread]: Flushing usage events
+[0m11:29:43.115720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2657762f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe264a063e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe264a062f0>]}
+
+
+============================== 11:29:43.118449 | 23a95e48-4ea9-478a-af8c-814c4d04ffee ==============================
+[0m11:29:43.118449 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:29:43.119267 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/vscode/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:29:43.119925 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/vscode/dbt_robert_project/models/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:29:43.120861 [debug] [MainThread]: Command `dbt test` failed at 11:29:43.120672 after 0.01 seconds
+[0m11:29:43.121421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2657762f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe264a05a80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe264a066e0>]}
+[0m11:29:43.121954 [debug] [MainThread]: Flushing usage events
+[0m11:40:32.326493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbfc5a380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbea0a4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbea0a470>]}
+
+
+============================== 11:40:32.329346 | 102919b9-44f5-4b4c-958a-63593b3f1ab7 ==============================
+[0m11:40:32.329346 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:40:32.330163 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:40:32.658398 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:40:32.659505 [debug] [MainThread]: Command `dbt test` failed at 11:40:32.659339 after 0.34 seconds
+[0m11:40:32.659996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbfc5a380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbd102f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2cbd100220>]}
+[0m11:40:32.660503 [debug] [MainThread]: Flushing usage events
+[0m11:42:21.969827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d1860e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d173ca4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d173ca440>]}
+
+
+============================== 11:42:21.975001 | a3255921-4ea2-4533-863c-c1cc6b0c0013 ==============================
+[0m11:42:21.975001 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:42:21.976604 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:22.328238 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:42:22.329431 [debug] [MainThread]: Command `dbt run` failed at 11:42:22.329280 after 0.38 seconds
+[0m11:42:22.329901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d1860e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d158c2f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9d158c2920>]}
+[0m11:42:22.330697 [debug] [MainThread]: Flushing usage events
+[0m11:42:38.183000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4b481e2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4b37c2410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4b37c23b0>]}
+
+
+============================== 11:42:38.186072 | 6168ed27-3755-4bdd-9a52-2d3fc70bb873 ==============================
+[0m11:42:38.186072 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:42:38.186997 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:42:38.528927 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:42:38.530183 [debug] [MainThread]: Command `dbt test` failed at 11:42:38.530014 after 0.35 seconds
+[0m11:42:38.530708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4b481e2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4b1caaf20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4b1caa4d0>]}
+[0m11:42:38.531561 [debug] [MainThread]: Flushing usage events
+[0m11:46:58.918158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dd40f6350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dd2e0a4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dd2e0a440>]}
+
+
+============================== 11:46:58.920807 | 10a0d8ee-b8bf-4bca-8b53-d1a4c4d7104f ==============================
+[0m11:46:58.920807 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:46:58.921736 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:46:59.270696 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'description': 'Cleaned up data for our customers', 'columns': [{'name': 'id', 'description': 'Primary key of the model', 'tests': ['unique', 'not_null']}]}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m11:46:59.272440 [debug] [MainThread]: Command `dbt test` failed at 11:46:59.272207 after 0.36 seconds
+[0m11:46:59.273346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dd40f6350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dd14fa950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0dd14fb010>]}
+[0m11:46:59.273946 [debug] [MainThread]: Flushing usage events
+[0m12:03:31.291599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643b36a320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643a5fa470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643a5fa410>]}
+
+
+============================== 12:03:31.294456 | f79e0382-32b4-4e67-b104-c7ecb9083f8a ==============================
+[0m12:03:31.294456 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:03:31.295238 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'debug': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:03:31.647531 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'columns': 'id', 'tests': ['unique']}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:03:31.648686 [debug] [MainThread]: Command `dbt test` failed at 12:03:31.648531 after 0.36 seconds
+[0m12:03:31.649136 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f643b36a320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64387ec4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f64387ef700>]}
+[0m12:03:31.649626 [debug] [MainThread]: Flushing usage events
+[0m12:14:16.370402 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f955584e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95547c64a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f95547c6440>]}
+
+
+============================== 12:14:16.373044 | 5f9caa4e-3823-43ad-a2cf-bba9c9103f6c ==============================
+[0m12:14:16.373044 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:14:16.373845 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:14:16.781090 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'columns': 'id', 'description': 'this id should be a used as primary key'}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:14:16.782312 [debug] [MainThread]: Command `dbt test` failed at 12:14:16.782168 after 0.42 seconds
+[0m12:14:16.782779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f955584e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9552cbcb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9552cbefb0>]}
+[0m12:14:16.783367 [debug] [MainThread]: Flushing usage events
+[0m12:15:26.455202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f84bfd4e2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f84befde440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f84befde3e0>]}
+
+
+============================== 12:15:26.457889 | ce363b21-635c-45ac-82fb-d2dd3d3a7a45 ==============================
+[0m12:15:26.457889 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:15:26.458819 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:15:26.797068 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'columns': 'id'}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:15:26.798164 [debug] [MainThread]: Command `dbt test` failed at 12:15:26.798003 after 0.35 seconds
+[0m12:15:26.798627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f84bfd4e2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f84bd1ec160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f84bd1ec040>]}
+[0m12:15:26.799136 [debug] [MainThread]: Flushing usage events
+[0m12:22:59.981302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f98372320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f972c6470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f972c6410>]}
+
+
+============================== 12:22:59.983921 | c185e91c-e6e9-4f2d-ae85-48019fb37ad6 ==============================
+[0m12:22:59.983921 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:22:59.984721 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:23:00.330055 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'columns': 'id', 'tests': ['unique']}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:23:00.331173 [debug] [MainThread]: Command `dbt test` failed at 12:23:00.330995 after 0.36 seconds
+[0m12:23:00.331648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f98372320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f957b5300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6f957b76a0>]}
+[0m12:23:00.332169 [debug] [MainThread]: Flushing usage events
+[0m12:33:32.791911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb12927e3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb127fca500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb127fca4a0>]}
+
+
+============================== 12:33:32.794514 | ae856ed5-eda4-4f6c-b5af-981442646597 ==============================
+[0m12:33:32.794514 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:33:32.795467 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:33:33.131273 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['models']: [{'name': 'dbtcustomers', 'columns': 'id', 'tests': ['unique']}] is not of type 'object'
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:33:33.132448 [debug] [MainThread]: Command `dbt test` failed at 12:33:33.132296 after 0.35 seconds
+[0m12:33:33.132913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb12927e3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1264c36a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb1264c0430>]}
+[0m12:33:33.133445 [debug] [MainThread]: Flushing usage events
+[0m12:45:17.470353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6325ffa380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6324dce4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6324dce470>]}
+
+
+============================== 12:45:17.473085 | 9a4f131a-7b7e-4127-991e-8ef6dd74b52f ==============================
+[0m12:45:17.473085 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:45:17.473892 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'profiles_dir': '/home/vscode/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:45:17.832648 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['version']: '2' is not valid under any of the given schemas
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:45:17.833797 [debug] [MainThread]: Command `dbt test` failed at 12:45:17.833622 after 0.37 seconds
+[0m12:45:17.834269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6325ffa380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63232a1600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f63232a1630>]}
+[0m12:45:17.834779 [debug] [MainThread]: Flushing usage events
+[0m12:46:27.077682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba26cba380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba25bf24d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba25bf2470>]}
+
+
+============================== 12:46:27.080313 | d49b0c1e-1aa5-46cc-9cf4-2d8f35d92855 ==============================
+[0m12:46:27.080313 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:46:27.081292 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:46:27.453172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd49b0c1e-1aa5-46cc-9cf4-2d8f35d92855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba26be6650>]}
+[0m12:46:27.470793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd49b0c1e-1aa5-46cc-9cf4-2d8f35d92855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba240dd2d0>]}
+[0m12:46:27.471625 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m12:46:27.483002 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m12:46:27.483715 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:46:27.484433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd49b0c1e-1aa5-46cc-9cf4-2d8f35d92855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba240ddc60>]}
+[0m12:46:28.331242 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m12:46:28.337218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd49b0c1e-1aa5-46cc-9cf4-2d8f35d92855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba23f7eda0>]}
+[0m12:46:28.343460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd49b0c1e-1aa5-46cc-9cf4-2d8f35d92855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba23f7e950>]}
+[0m12:46:28.344046 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m12:46:28.344629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd49b0c1e-1aa5-46cc-9cf4-2d8f35d92855', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba23f7f820>]}
+[0m12:46:28.346200 [info ] [MainThread]: 
+[0m12:46:28.346918 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:46:28.347806 [debug] [MainThread]: Command end result
+[0m12:46:28.354550 [debug] [MainThread]: Command `dbt test` succeeded at 12:46:28.354417 after 1.28 seconds
+[0m12:46:28.354997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba26cba380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba23e5f460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fba23fc1450>]}
+[0m12:46:28.355448 [debug] [MainThread]: Flushing usage events
+[0m12:47:49.371065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dfdf2350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4decc64a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4decc6440>]}
+
+
+============================== 12:47:49.373754 | 53d2c8f8-2dd1-4d81-bab7-07eed5ab0b35 ==============================
+[0m12:47:49.373754 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:47:49.374574 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:47:49.785650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53d2c8f8-2dd1-4d81-bab7-07eed5ab0b35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dfcda8f0>]}
+[0m12:47:49.802628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53d2c8f8-2dd1-4d81-bab7-07eed5ab0b35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dd1b1030>]}
+[0m12:47:49.803533 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m12:47:49.815170 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m12:47:49.842370 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:47:49.842853 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:47:49.843343 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m12:47:49.851993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '53d2c8f8-2dd1-4d81-bab7-07eed5ab0b35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dcf6a680>]}
+[0m12:47:49.859713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '53d2c8f8-2dd1-4d81-bab7-07eed5ab0b35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dd0a6350>]}
+[0m12:47:49.860312 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m12:47:49.860886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53d2c8f8-2dd1-4d81-bab7-07eed5ab0b35', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dd0a6380>]}
+[0m12:47:49.862088 [info ] [MainThread]: 
+[0m12:47:49.862734 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:47:49.863711 [debug] [MainThread]: Command end result
+[0m12:47:49.870256 [debug] [MainThread]: Command `dbt test` succeeded at 12:47:49.870045 after 0.51 seconds
+[0m12:47:49.870918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dfdf2350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dfd405b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa4dd0a5db0>]}
+[0m12:47:49.871571 [debug] [MainThread]: Flushing usage events
+[0m12:49:11.408899 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd32ebe2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd31dc6440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd31dc63e0>]}
+
+
+============================== 12:49:11.411563 | 6530c6cf-2e1d-405a-a701-6a07a4c8ecb3 ==============================
+[0m12:49:11.411563 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:49:11.412403 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:49:11.761941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6530c6cf-2e1d-405a-a701-6a07a4c8ecb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd32df4d30>]}
+[0m12:49:11.779598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6530c6cf-2e1d-405a-a701-6a07a4c8ecb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd302b15a0>]}
+[0m12:49:11.780540 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m12:49:11.794300 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m12:49:11.801521 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m12:49:11.802174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6530c6cf-2e1d-405a-a701-6a07a4c8ecb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd302b1120>]}
+[0m12:49:12.575119 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m12:49:12.580993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6530c6cf-2e1d-405a-a701-6a07a4c8ecb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd30243eb0>]}
+[0m12:49:12.588018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6530c6cf-2e1d-405a-a701-6a07a4c8ecb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd30243e20>]}
+[0m12:49:12.588695 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m12:49:12.589273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6530c6cf-2e1d-405a-a701-6a07a4c8ecb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd30243e50>]}
+[0m12:49:12.590715 [info ] [MainThread]: 
+[0m12:49:12.591516 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:49:12.592275 [debug] [MainThread]: Command end result
+[0m12:49:12.598869 [debug] [MainThread]: Command `dbt test` succeeded at 12:49:12.598736 after 1.20 seconds
+[0m12:49:12.599303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd32ebe2f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd301586d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efd30243880>]}
+[0m12:49:12.599742 [debug] [MainThread]: Flushing usage events
+[0m12:50:40.322550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62847ee320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62836c6470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62836c6410>]}
+
+
+============================== 12:50:40.327672 | d390bebb-cdb6-461d-929b-7bcf56e3c373 ==============================
+[0m12:50:40.327672 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:50:40.329344 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:50:40.671090 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:50:40.672284 [debug] [MainThread]: Command `dbt test` failed at 12:50:40.672131 after 0.38 seconds
+[0m12:50:40.672757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f62847ee320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6281baa1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6281ba95a0>]}
+[0m12:50:40.673289 [debug] [MainThread]: Flushing usage events
+[0m12:51:27.298790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f461fe320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f44f0e470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f44f0e410>]}
+
+
+============================== 12:51:27.301398 | 20c7a5a3-f7d4-49ac-8d4a-968a28fc17cf ==============================
+[0m12:51:27.301398 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:51:27.302220 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:51:27.689937 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:51:27.693641 [debug] [MainThread]: Command `dbt test` failed at 12:51:27.693451 after 0.40 seconds
+[0m12:51:27.694111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f461fe320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f435ffee0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8f435fc5b0>]}
+[0m12:51:27.694638 [debug] [MainThread]: Flushing usage events
+[0m12:52:28.873543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f686738e290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68660ca3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68660ca380>]}
+
+
+============================== 12:52:28.876284 | 8938b9a8-98ee-40e3-a138-8d5a028602b9 ==============================
+[0m12:52:28.876284 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:52:28.877103 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:52:29.226311 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Required "name" field not present in project
+
+Error encountered in /home/vscode/dbt_robert_project/models/dbt_project.yml
+[0m12:52:29.227498 [debug] [MainThread]: Command `dbt test` failed at 12:52:29.227345 after 0.36 seconds
+[0m12:52:29.228001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f686738e290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68645be260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68645bc5b0>]}
+[0m12:52:29.228630 [debug] [MainThread]: Flushing usage events
+[0m12:54:08.190277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9989af2350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99889c64a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99889c6440>]}
+
+
+============================== 12:54:08.193083 | 2d5829bd-5fb7-49a1-b43b-aa15bba54d9c ==============================
+[0m12:54:08.193083 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:54:08.193947 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:54:08.558864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d5829bd-5fb7-49a1-b43b-aa15bba54d9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f99899d8040>]}
+[0m12:54:08.576816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d5829bd-5fb7-49a1-b43b-aa15bba54d9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9986eb1090>]}
+[0m12:54:08.577836 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m12:54:08.589624 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m12:54:08.597130 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m12:54:08.597870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2d5829bd-5fb7-49a1-b43b-aa15bba54d9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9986ecb490>]}
+[0m12:54:09.358039 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m12:54:09.365009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d5829bd-5fb7-49a1-b43b-aa15bba54d9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9986ebf670>]}
+[0m12:54:09.372086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d5829bd-5fb7-49a1-b43b-aa15bba54d9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9986ebe290>]}
+[0m12:54:09.372885 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m12:54:09.373483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d5829bd-5fb7-49a1-b43b-aa15bba54d9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9986ebf2b0>]}
+[0m12:54:09.374663 [info ] [MainThread]: 
+[0m12:54:09.375323 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:54:09.376248 [debug] [MainThread]: Command end result
+[0m12:54:09.382700 [debug] [MainThread]: Command `dbt test` succeeded at 12:54:09.382495 after 1.20 seconds
+[0m12:54:09.383293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9989af2350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9986df7f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9986ebc610>]}
+[0m12:54:09.383751 [debug] [MainThread]: Flushing usage events
+[0m12:55:21.013051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd620786320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61f6c6470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61f6c6410>]}
+
+
+============================== 12:55:21.016068 | 823d88b3-316f-4b56-a4b2-0ca337e6e6b9 ==============================
+[0m12:55:21.016068 [info ] [MainThread]: Running with dbt=1.5.3
+[0m12:55:21.016893 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/models/logs', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m12:55:21.377655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '823d88b3-316f-4b56-a4b2-0ca337e6e6b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd6206bc310>]}
+[0m12:55:21.400437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '823d88b3-316f-4b56-a4b2-0ca337e6e6b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61dbb0820>]}
+[0m12:55:21.401449 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m12:55:21.412952 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m12:55:21.420454 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m12:55:21.421161 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '823d88b3-316f-4b56-a4b2-0ca337e6e6b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61dbcab90>]}
+[0m12:55:22.199454 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models
+[0m12:55:22.205669 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '823d88b3-316f-4b56-a4b2-0ca337e6e6b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61dbbf430>]}
+[0m12:55:22.212675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '823d88b3-316f-4b56-a4b2-0ca337e6e6b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61dbbf460>]}
+[0m12:55:22.213395 [info ] [MainThread]: Found 0 models, 0 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m12:55:22.213984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '823d88b3-316f-4b56-a4b2-0ca337e6e6b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61dbbc2b0>]}
+[0m12:55:22.215157 [info ] [MainThread]: 
+[0m12:55:22.215816 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:55:22.216754 [debug] [MainThread]: Command end result
+[0m12:55:22.223396 [debug] [MainThread]: Command `dbt test` succeeded at 12:55:22.223202 after 1.22 seconds
+[0m12:55:22.223991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd620786320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61da587c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd61dbbd300>]}
+[0m12:55:22.224445 [debug] [MainThread]: Flushing usage events
