@@ -1,0 +1,12 @@
+version: 2
+
+name: dbtcustomers
+profile: dbt_robert
+
+models:
+   - name: dbtcustomers
+     columns: 
+      - name: id
+        tests: 
+          - unique
+          - not_null
