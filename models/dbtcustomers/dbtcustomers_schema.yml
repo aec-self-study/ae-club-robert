@@ -1,0 +1,20 @@
+version: 2
+
+name: dbtcustomers
+profile: dbt_robert
+
+models:
+   - name: dbtcustomers
+     description: '{{ doc("dbt_customers_table") }}'
+     columns: 
+      - name: id
+        description: this column is a unique customer identifier. it can also be used as the Primary Key in this table
+        tests: 
+          - unique
+          - not_null
+
+      - name: name
+        description: Customer name
+        tests: 
+          - unique
+
