@@ -34,6 +34,60 @@ models:
         description: total number of orders by customer
         tests:
           - not_null
+   - name: dbtcustomers_revenuereport
+     description: Table for revenue report
+     columns: 
+      - name: id
+        description: this column is a unique customer identifier. it can also be used as the Primary Key in this table
+        tests: 
+          - unique
+          - not_null
+
+      - name: name
+        description: Customer name
+        tests: 
+          - not_null
+
+      - name: email
+        description: customer main contact email address
+        tests:
+          - not_null
+          - unique
+
+      - name: created_at
+        description: Order date
+        tests: 
+          - not_null
+
+      - name: year_week_ordercreated
+        description: Order date formatted in year and week
+        tests: 
+          - not_null
+      
+      - name: category
+        description: product category (eg. merch, coffee beans etc)
+        tests: 
+          - not_null
+        
+      - name: price
+        description: price per item sold. NOT order Total.
+        tests:
+          - not_null
+
+      - name: is_returning_customer
+        description: from other dbt model which counts number of order IDs per customer.
+        tests: 
+          - not_null
+
+      - name: number_of_orders
+        description: total number of orders by customer
+        tests:
+          - not_null
+   
+    
+
+
+   
     
 
 
