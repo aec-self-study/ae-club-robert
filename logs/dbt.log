@@ -4455,3 +4455,673 @@ KeyboardInterrupt
 [0m14:36:17.452220 [debug] [MainThread]: Command `dbt docs serve` failed at 14:36:17.452067 after 362.44 seconds
 [0m14:36:17.452712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f540029e350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53fd4b3580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f53fd4b0940>]}
 [0m14:36:17.453317 [debug] [MainThread]: Flushing usage events
+[0m11:09:41.641284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69522823e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6950fd2530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6950fd24d0>]}
+
+
+============================== 11:09:41.662539 | 0ecf803e-5002-48dc-bf0c-6f7d6f5b049d ==============================
+[0m11:09:41.662539 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:09:41.663684 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/vscode/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:09:43.561511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0ecf803e-5002-48dc-bf0c-6f7d6f5b049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f695202c9a0>]}
+[0m11:09:43.579064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0ecf803e-5002-48dc-bf0c-6f7d6f5b049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f694f4b2350>]}
+[0m11:09:43.580241 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m11:09:43.592764 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m11:09:43.728336 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:09:43.729531 [debug] [MainThread]: Partial parsing: updated file: dbt_robert://models/dbtcustomers/dbtcustomers_schema.yml
+[0m11:09:43.757250 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers/dbtcustomers.sql
+[0m11:09:43.837585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0ecf803e-5002-48dc-bf0c-6f7d6f5b049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f694f3480d0>]}
+[0m11:09:43.845492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0ecf803e-5002-48dc-bf0c-6f7d6f5b049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f694f25c130>]}
+[0m11:09:43.846168 [info ] [MainThread]: Found 1 model, 8 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics, 0 groups
+[0m11:09:43.846815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ecf803e-5002-48dc-bf0c-6f7d6f5b049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f694f25c0d0>]}
+[0m11:09:43.849044 [info ] [MainThread]: 
+[0m11:09:43.850200 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:09:43.851950 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert'
+[0m11:09:43.852435 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:09:49.646446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0ecf803e-5002-48dc-bf0c-6f7d6f5b049d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f694f25c0d0>]}
+[0m11:09:49.647645 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m11:09:49.648304 [info ] [MainThread]: 
+[0m11:09:49.678454 [debug] [Thread-1 (]: Began running node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:09:49.680042 [debug] [Thread-2 (]: Began running node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:09:49.679348 [info ] [Thread-1 (]: 1 of 8 START test not_null_dbtcustomers_email .................................. [RUN]
+[0m11:09:49.682664 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now test.dbt_robert.not_null_dbtcustomers_email.6c384897fd)
+[0m11:09:49.684023 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:09:49.680616 [info ] [Thread-2 (]: 2 of 8 START test not_null_dbtcustomers_first_order_at ......................... [RUN]
+[0m11:09:49.690676 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2'
+[0m11:09:49.691355 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:09:49.720447 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_email.6c384897fd"
+[0m11:09:49.721739 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_email.6c384897fd (compile): 11:09:49.684534 => 11:09:49.721326
+[0m11:09:49.722430 [debug] [Thread-1 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:09:49.723655 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2"
+[0m11:09:49.734713 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2 (compile): 11:09:49.691797 => 11:09:49.733578
+[0m11:09:49.745998 [debug] [Thread-2 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:09:49.777501 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_email.6c384897fd"
+[0m11:09:49.778754 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2"
+[0m11:09:49.779839 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:09:49.780690 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:09:49.781251 [debug] [Thread-1 (]: On test.dbt_robert.not_null_dbtcustomers_email.6c384897fd: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_email.6c384897fd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select email
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where email is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:49.781801 [debug] [Thread-2 (]: On test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_order_at
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where first_order_at is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:51.514711 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:33cc2361-8a57-4aa0-ab1e-17aeb3786050&page=queryresults
+[0m11:09:51.516582 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:2a3214c4-0cbe-411a-b97b-dc3651afd12e&page=queryresults
+[0m11:09:51.518835 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_email.6c384897fd (execute): 11:09:49.724774 => 11:09:51.518439
+[0m11:09:51.519956 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2 (execute): 11:09:49.746770 => 11:09:51.519659
+[0m11:09:51.521068 [info ] [Thread-1 (]: 1 of 8 PASS not_null_dbtcustomers_email ........................................ [[32mPASS[0m in 1.84s]
+[0m11:09:51.523674 [debug] [Thread-1 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:09:51.522562 [info ] [Thread-2 (]: 2 of 8 PASS not_null_dbtcustomers_first_order_at ............................... [[32mPASS[0m in 1.83s]
+[0m11:09:51.524552 [debug] [Thread-1 (]: Began running node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:09:51.525393 [debug] [Thread-2 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:09:51.525927 [info ] [Thread-1 (]: 3 of 8 START test not_null_dbtcustomers_id ..................................... [RUN]
+[0m11:09:51.526900 [debug] [Thread-2 (]: Began running node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:09:51.528827 [info ] [Thread-2 (]: 4 of 8 START test not_null_dbtcustomers_name ................................... [RUN]
+[0m11:09:51.528172 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_email.6c384897fd, now test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c)
+[0m11:09:51.530031 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2, now test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513)
+[0m11:09:51.530828 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:09:51.531327 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:09:51.537215 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c"
+[0m11:09:51.541944 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513"
+[0m11:09:51.542912 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c (compile): 11:09:51.531965 => 11:09:51.542574
+[0m11:09:51.543537 [debug] [Thread-1 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:09:51.546361 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c"
+[0m11:09:51.546917 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513 (compile): 11:09:51.537566 => 11:09:51.546682
+[0m11:09:51.547639 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:09:51.548094 [debug] [Thread-2 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:09:51.548595 [debug] [Thread-1 (]: On test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:51.551244 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513"
+[0m11:09:51.554783 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:09:51.555282 [debug] [Thread-2 (]: On test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select name
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:53.215088 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:be503b4e-ed9d-476f-b794-c61ae76b94bb&page=queryresults
+[0m11:09:53.216634 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c (execute): 11:09:51.543943 => 11:09:53.216268
+[0m11:09:53.217937 [info ] [Thread-1 (]: 3 of 8 PASS not_null_dbtcustomers_id ........................................... [[32mPASS[0m in 1.69s]
+[0m11:09:53.219316 [debug] [Thread-1 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:09:53.220008 [debug] [Thread-1 (]: Began running node test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c
+[0m11:09:53.220823 [info ] [Thread-1 (]: 5 of 8 START test not_null_dbtcustomers_number_of_orders ....................... [RUN]
+[0m11:09:53.222441 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c, now test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c)
+[0m11:09:53.223130 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c
+[0m11:09:53.234359 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c"
+[0m11:09:53.235266 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c (compile): 11:09:53.223721 => 11:09:53.234920
+[0m11:09:53.235737 [debug] [Thread-1 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c
+[0m11:09:53.298450 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c"
+[0m11:09:53.299447 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:09:53.300028 [debug] [Thread-1 (]: On test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select number-of_orders
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where number-of_orders is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:53.377441 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:e7142f55-f54e-4bd0-8455-84de82513484&page=queryresults
+[0m11:09:53.378682 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513 (execute): 11:09:51.548937 => 11:09:53.378366
+[0m11:09:53.379776 [info ] [Thread-2 (]: 4 of 8 PASS not_null_dbtcustomers_name ......................................... [[32mPASS[0m in 1.85s]
+[0m11:09:53.381115 [debug] [Thread-2 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:09:53.381764 [debug] [Thread-2 (]: Began running node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:09:53.382524 [info ] [Thread-2 (]: 6 of 8 START test unique_dbtcustomers_email .................................... [RUN]
+[0m11:09:53.384046 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513, now test.dbt_robert.unique_dbtcustomers_email.cc133877c6)
+[0m11:09:53.384549 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:09:53.393992 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.unique_dbtcustomers_email.cc133877c6"
+[0m11:09:53.394895 [debug] [Thread-2 (]: Timing info for test.dbt_robert.unique_dbtcustomers_email.cc133877c6 (compile): 11:09:53.385046 => 11:09:53.394549
+[0m11:09:53.395347 [debug] [Thread-2 (]: Began executing node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:09:53.398158 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.unique_dbtcustomers_email.cc133877c6"
+[0m11:09:53.398923 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:09:53.399459 [debug] [Thread-2 (]: On test.dbt_robert.unique_dbtcustomers_email.cc133877c6: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.unique_dbtcustomers_email.cc133877c6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select email as unique_field
+  from `aec-students`.`dbt_robert`.`dbtcustomers`
+  where email is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:53.749944 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: number; Did you mean name? at [15:7]')
+[0m11:09:54.831606 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:b92df268-c245-424f-b54c-2350601c6c7e&page=queryresults
+[0m11:09:54.833281 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c (execute): 11:09:53.236032 => 11:09:54.832742
+[0m11:09:54.868546 [debug] [Thread-1 (]: Database Error in test not_null_dbtcustomers_number_of_orders (models/dbtcustomers/dbtcustomers_schema.yml)
+  Unrecognized name: number; Did you mean name? at [15:7]
+  compiled Code at target/run/dbt_robert/models/dbtcustomers/dbtcustomers_schema.yml/not_null_dbtcustomers_number_of_orders.sql
+[0m11:09:54.869569 [error] [Thread-1 (]: 5 of 8 ERROR not_null_dbtcustomers_number_of_orders ............................ [[31mERROR[0m in 1.65s]
+[0m11:09:54.870484 [debug] [Thread-1 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c
+[0m11:09:54.871201 [debug] [Thread-1 (]: Began running node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:09:54.872162 [info ] [Thread-1 (]: 7 of 8 START test unique_dbtcustomers_first_order_at ........................... [RUN]
+[0m11:09:54.873546 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_number_of_orders.ae2ad1c92c, now test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c)
+[0m11:09:54.874038 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:09:54.880397 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c"
+[0m11:09:54.881319 [debug] [Thread-1 (]: Timing info for test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c (compile): 11:09:54.874363 => 11:09:54.880966
+[0m11:09:54.881795 [debug] [Thread-1 (]: Began executing node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:09:54.884624 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c"
+[0m11:09:54.885378 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:09:54.885926 [debug] [Thread-1 (]: On test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select first_order_at as unique_field
+  from `aec-students`.`dbt_robert`.`dbtcustomers`
+  where first_order_at is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:55.052212 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:7e30dbe2-4b74-4c89-bf2d-659d1d1d8505&page=queryresults
+[0m11:09:55.053750 [debug] [Thread-2 (]: Timing info for test.dbt_robert.unique_dbtcustomers_email.cc133877c6 (execute): 11:09:53.395643 => 11:09:55.053372
+[0m11:09:55.055220 [info ] [Thread-2 (]: 6 of 8 PASS unique_dbtcustomers_email .......................................... [[32mPASS[0m in 1.67s]
+[0m11:09:55.057790 [debug] [Thread-2 (]: Finished running node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:09:55.058628 [debug] [Thread-2 (]: Began running node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:09:55.059898 [info ] [Thread-2 (]: 8 of 8 START test unique_dbtcustomers_id ....................................... [RUN]
+[0m11:09:55.061519 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_robert.unique_dbtcustomers_email.cc133877c6, now test.dbt_robert.unique_dbtcustomers_id.0c18a9f245)
+[0m11:09:55.062022 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:09:55.067517 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.unique_dbtcustomers_id.0c18a9f245"
+[0m11:09:55.068497 [debug] [Thread-2 (]: Timing info for test.dbt_robert.unique_dbtcustomers_id.0c18a9f245 (compile): 11:09:55.062359 => 11:09:55.068137
+[0m11:09:55.069099 [debug] [Thread-2 (]: Began executing node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:09:55.071937 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.unique_dbtcustomers_id.0c18a9f245"
+[0m11:09:55.072712 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:09:55.073256 [debug] [Thread-2 (]: On test.dbt_robert.unique_dbtcustomers_id.0c18a9f245: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.unique_dbtcustomers_id.0c18a9f245"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `aec-students`.`dbt_robert`.`dbtcustomers`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:09:56.434535 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:0773e51a-628a-4d77-8b79-926b781a9bb1&page=queryresults
+[0m11:09:56.436045 [debug] [Thread-1 (]: Timing info for test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c (execute): 11:09:54.882089 => 11:09:56.435687
+[0m11:09:56.437310 [info ] [Thread-1 (]: 7 of 8 PASS unique_dbtcustomers_first_order_at ................................. [[32mPASS[0m in 1.56s]
+[0m11:09:56.438848 [debug] [Thread-1 (]: Finished running node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:09:57.072080 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:43d4059a-22e6-4125-9e63-e1bb42969ff0&page=queryresults
+[0m11:09:57.073490 [debug] [Thread-2 (]: Timing info for test.dbt_robert.unique_dbtcustomers_id.0c18a9f245 (execute): 11:09:55.069396 => 11:09:57.073185
+[0m11:09:57.074641 [info ] [Thread-2 (]: 8 of 8 PASS unique_dbtcustomers_id ............................................. [[32mPASS[0m in 2.01s]
+[0m11:09:57.075684 [debug] [Thread-2 (]: Finished running node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:09:57.078023 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:09:57.078450 [debug] [MainThread]: Connection 'test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c' was properly closed.
+[0m11:09:57.078817 [debug] [MainThread]: Connection 'test.dbt_robert.unique_dbtcustomers_id.0c18a9f245' was properly closed.
+[0m11:09:57.079268 [info ] [MainThread]: 
+[0m11:09:57.079856 [info ] [MainThread]: Finished running 8 tests in 0 hours 0 minutes and 13.23 seconds (13.23s).
+[0m11:09:57.082486 [debug] [MainThread]: Command end result
+[0m11:09:57.096783 [info ] [MainThread]: 
+[0m11:09:57.097446 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:09:57.098090 [info ] [MainThread]: 
+[0m11:09:57.098812 [error] [MainThread]: [33mDatabase Error in test not_null_dbtcustomers_number_of_orders (models/dbtcustomers/dbtcustomers_schema.yml)[0m
+[0m11:09:57.099522 [error] [MainThread]:   Unrecognized name: number; Did you mean name? at [15:7]
+[0m11:09:57.100224 [error] [MainThread]:   compiled Code at target/run/dbt_robert/models/dbtcustomers/dbtcustomers_schema.yml/not_null_dbtcustomers_number_of_orders.sql
+[0m11:09:57.100985 [info ] [MainThread]: 
+[0m11:09:57.101663 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 TOTAL=8
+[0m11:09:57.102787 [debug] [MainThread]: Command `dbt test` failed at 11:09:57.102582 after 15.50 seconds
+[0m11:09:57.103401 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f69522823e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f694edfcfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f694edfd060>]}
+[0m11:09:57.104131 [debug] [MainThread]: Flushing usage events
+[0m11:11:09.185261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4f99a290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4e6ca3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4e6ca380>]}
+
+
+============================== 11:11:09.188112 | 94a233a6-95b7-4363-9a15-bd1bf49db9d3 ==============================
+[0m11:11:09.188112 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:11:09.189099 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/logs', 'fail_fast': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:11:09.637233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '94a233a6-95b7-4363-9a15-bd1bf49db9d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4f4c8850>]}
+[0m11:11:09.655052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '94a233a6-95b7-4363-9a15-bd1bf49db9d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4cbad390>]}
+[0m11:11:09.656172 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m11:11:09.668992 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m11:11:09.696356 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:11:09.697368 [debug] [MainThread]: Partial parsing: updated file: dbt_robert://models/dbtcustomers/dbtcustomers_schema.yml
+[0m11:11:09.723983 [debug] [MainThread]: 1699: static parser successfully parsed dbtcustomers/dbtcustomers.sql
+[0m11:11:09.804701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '94a233a6-95b7-4363-9a15-bd1bf49db9d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4ca480d0>]}
+[0m11:11:09.812797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '94a233a6-95b7-4363-9a15-bd1bf49db9d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4c965360>]}
+[0m11:11:09.813464 [info ] [MainThread]: Found 1 model, 8 tests, 0 snapshots, 0 analyses, 357 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics, 0 groups
+[0m11:11:09.814066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94a233a6-95b7-4363-9a15-bd1bf49db9d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4c965300>]}
+[0m11:11:09.816341 [info ] [MainThread]: 
+[0m11:11:09.817498 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m11:11:09.819673 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert'
+[0m11:11:09.820213 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:11:10.945643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '94a233a6-95b7-4363-9a15-bd1bf49db9d3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4c992dd0>]}
+[0m11:11:10.947101 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m11:11:10.948361 [info ] [MainThread]: 
+[0m11:11:10.952960 [debug] [Thread-1 (]: Began running node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:11:10.953513 [debug] [Thread-2 (]: Began running node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:11:10.954060 [info ] [Thread-1 (]: 1 of 8 START test not_null_dbtcustomers_email .................................. [RUN]
+[0m11:11:10.955058 [info ] [Thread-2 (]: 2 of 8 START test not_null_dbtcustomers_first_order_at ......................... [RUN]
+[0m11:11:10.956093 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now test.dbt_robert.not_null_dbtcustomers_email.6c384897fd)
+[0m11:11:10.957025 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2'
+[0m11:11:10.957529 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:11:10.958201 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:11:10.972513 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_email.6c384897fd"
+[0m11:11:10.977477 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2"
+[0m11:11:10.978548 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_email.6c384897fd (compile): 11:11:10.958710 => 11:11:10.978179
+[0m11:11:10.979192 [debug] [Thread-1 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:11:10.983463 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2 (compile): 11:11:10.972924 => 11:11:10.983099
+[0m11:11:10.984094 [debug] [Thread-2 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:11:11.032937 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2"
+[0m11:11:11.036227 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_email.6c384897fd"
+[0m11:11:11.037297 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:11:11.038115 [debug] [Thread-2 (]: On test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select first_order_at
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where first_order_at is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:11.041162 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:11:11.041776 [debug] [Thread-1 (]: On test.dbt_robert.not_null_dbtcustomers_email.6c384897fd: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_email.6c384897fd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select email
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where email is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:12.615577 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:3a9e375e-fc5c-4c09-bd1e-39979766b6b7&page=queryresults
+[0m11:11:12.618081 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2 (execute): 11:11:10.985501 => 11:11:12.617685
+[0m11:11:12.619518 [info ] [Thread-2 (]: 2 of 8 PASS not_null_dbtcustomers_first_order_at ............................... [[32mPASS[0m in 1.66s]
+[0m11:11:12.621045 [debug] [Thread-2 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2
+[0m11:11:12.622036 [debug] [Thread-2 (]: Began running node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:11:12.623088 [info ] [Thread-2 (]: 3 of 8 START test not_null_dbtcustomers_id ..................................... [RUN]
+[0m11:11:12.630041 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_first_order_at.f903861eb2, now test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c)
+[0m11:11:12.630879 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:11:12.639495 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c"
+[0m11:11:12.640363 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:56922889-97f3-4921-aa00-86b2cd572645&page=queryresults
+[0m11:11:12.641475 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_email.6c384897fd (execute): 11:11:10.979711 => 11:11:12.641214
+[0m11:11:12.643660 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c (compile): 11:11:12.631429 => 11:11:12.642976
+[0m11:11:12.642630 [info ] [Thread-1 (]: 1 of 8 PASS not_null_dbtcustomers_email ........................................ [[32mPASS[0m in 1.69s]
+[0m11:11:12.645486 [debug] [Thread-1 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_email.6c384897fd
+[0m11:11:12.646042 [debug] [Thread-1 (]: Began running node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:11:12.646707 [info ] [Thread-1 (]: 4 of 8 START test not_null_dbtcustomers_name ................................... [RUN]
+[0m11:11:12.647800 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_email.6c384897fd, now test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513)
+[0m11:11:12.648269 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:11:12.644316 [debug] [Thread-2 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:11:12.653809 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513"
+[0m11:11:12.656713 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c"
+[0m11:11:12.657682 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513 (compile): 11:11:12.648569 => 11:11:12.657331
+[0m11:11:12.658405 [debug] [Thread-1 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:11:12.661367 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513"
+[0m11:11:12.662166 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:11:12.662858 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:11:12.663336 [debug] [Thread-2 (]: On test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:12.663859 [debug] [Thread-1 (]: On test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select name
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:14.086176 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:c12a76ce-5431-4da8-8249-00c2b3a6eb2c&page=queryresults
+[0m11:11:14.087495 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c (execute): 11:11:12.654178 => 11:11:14.087185
+[0m11:11:14.088595 [info ] [Thread-2 (]: 3 of 8 PASS not_null_dbtcustomers_id ........................................... [[32mPASS[0m in 1.46s]
+[0m11:11:14.089624 [debug] [Thread-2 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c
+[0m11:11:14.090625 [debug] [Thread-2 (]: Began running node test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a
+[0m11:11:14.091256 [info ] [Thread-2 (]: 5 of 8 START test not_null_dbtcustomers_number_of_orders ....................... [RUN]
+[0m11:11:14.092372 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_id.bcdc85008c, now test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a)
+[0m11:11:14.092850 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a
+[0m11:11:14.100770 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a"
+[0m11:11:14.101673 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a (compile): 11:11:14.093185 => 11:11:14.101329
+[0m11:11:14.102156 [debug] [Thread-2 (]: Began executing node test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a
+[0m11:11:14.104911 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a"
+[0m11:11:14.105672 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:11:14.106261 [debug] [Thread-2 (]: On test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select number_of_orders
+from `aec-students`.`dbt_robert`.`dbtcustomers`
+where number_of_orders is null
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:14.157096 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:d9b60c5b-03a4-449f-9db3-fbff30534eb0&page=queryresults
+[0m11:11:14.163519 [debug] [Thread-1 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513 (execute): 11:11:12.658874 => 11:11:14.163119
+[0m11:11:14.165975 [info ] [Thread-1 (]: 4 of 8 PASS not_null_dbtcustomers_name ......................................... [[32mPASS[0m in 1.52s]
+[0m11:11:14.180693 [debug] [Thread-1 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513
+[0m11:11:14.181580 [debug] [Thread-1 (]: Began running node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:11:14.182896 [info ] [Thread-1 (]: 6 of 8 START test unique_dbtcustomers_email .................................... [RUN]
+[0m11:11:14.192368 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_name.b8d85cc513, now test.dbt_robert.unique_dbtcustomers_email.cc133877c6)
+[0m11:11:14.193123 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:11:14.262440 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.unique_dbtcustomers_email.cc133877c6"
+[0m11:11:14.263560 [debug] [Thread-1 (]: Timing info for test.dbt_robert.unique_dbtcustomers_email.cc133877c6 (compile): 11:11:14.193704 => 11:11:14.263200
+[0m11:11:14.264079 [debug] [Thread-1 (]: Began executing node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:11:14.266842 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.unique_dbtcustomers_email.cc133877c6"
+[0m11:11:14.268161 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:11:14.268657 [debug] [Thread-1 (]: On test.dbt_robert.unique_dbtcustomers_email.cc133877c6: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.unique_dbtcustomers_email.cc133877c6"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select email as unique_field
+  from `aec-students`.`dbt_robert`.`dbtcustomers`
+  where email is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:15.551345 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:28093311-ffff-4394-a713-7459ccd6dcf6&page=queryresults
+[0m11:11:15.552855 [debug] [Thread-1 (]: Timing info for test.dbt_robert.unique_dbtcustomers_email.cc133877c6 (execute): 11:11:14.264387 => 11:11:15.552471
+[0m11:11:15.554117 [info ] [Thread-1 (]: 6 of 8 PASS unique_dbtcustomers_email .......................................... [[32mPASS[0m in 1.36s]
+[0m11:11:15.555547 [debug] [Thread-1 (]: Finished running node test.dbt_robert.unique_dbtcustomers_email.cc133877c6
+[0m11:11:15.556273 [debug] [Thread-1 (]: Began running node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:11:15.557196 [info ] [Thread-1 (]: 7 of 8 START test unique_dbtcustomers_first_order_at ........................... [RUN]
+[0m11:11:15.558407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_robert.unique_dbtcustomers_email.cc133877c6, now test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c)
+[0m11:11:15.558893 [debug] [Thread-1 (]: Began compiling node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:11:15.566186 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c"
+[0m11:11:15.567153 [debug] [Thread-1 (]: Timing info for test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c (compile): 11:11:15.559198 => 11:11:15.566798
+[0m11:11:15.567631 [debug] [Thread-1 (]: Began executing node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:11:15.570382 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c"
+[0m11:11:15.571346 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:11:15.571884 [debug] [Thread-1 (]: On test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select first_order_at as unique_field
+  from `aec-students`.`dbt_robert`.`dbtcustomers`
+  where first_order_at is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:15.749813 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:4e3549ef-2298-47c3-b6cd-bb2a697a9559&page=queryresults
+[0m11:11:15.751293 [debug] [Thread-2 (]: Timing info for test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a (execute): 11:11:14.102483 => 11:11:15.750925
+[0m11:11:15.752464 [info ] [Thread-2 (]: 5 of 8 PASS not_null_dbtcustomers_number_of_orders ............................. [[32mPASS[0m in 1.66s]
+[0m11:11:15.753740 [debug] [Thread-2 (]: Finished running node test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a
+[0m11:11:15.754342 [debug] [Thread-2 (]: Began running node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:11:15.755413 [info ] [Thread-2 (]: 8 of 8 START test unique_dbtcustomers_id ....................................... [RUN]
+[0m11:11:15.756538 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_robert.not_null_dbtcustomers_number_of_orders.7b413ffd0a, now test.dbt_robert.unique_dbtcustomers_id.0c18a9f245)
+[0m11:11:15.757016 [debug] [Thread-2 (]: Began compiling node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:11:15.763047 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_robert.unique_dbtcustomers_id.0c18a9f245"
+[0m11:11:15.763966 [debug] [Thread-2 (]: Timing info for test.dbt_robert.unique_dbtcustomers_id.0c18a9f245 (compile): 11:11:15.757379 => 11:11:15.763621
+[0m11:11:15.764430 [debug] [Thread-2 (]: Began executing node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:11:15.769209 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_robert.unique_dbtcustomers_id.0c18a9f245"
+[0m11:11:15.770193 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:11:15.770918 [debug] [Thread-2 (]: On test.dbt_robert.unique_dbtcustomers_id.0c18a9f245: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "test.dbt_robert.unique_dbtcustomers_id.0c18a9f245"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `aec-students`.`dbt_robert`.`dbtcustomers`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m11:11:17.027177 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:2bae5175-80b8-4154-bc45-54a904ce7406&page=queryresults
+[0m11:11:17.028701 [debug] [Thread-1 (]: Timing info for test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c (execute): 11:11:15.567931 => 11:11:17.028330
+[0m11:11:17.030023 [info ] [Thread-1 (]: 7 of 8 PASS unique_dbtcustomers_first_order_at ................................. [[32mPASS[0m in 1.47s]
+[0m11:11:17.031593 [debug] [Thread-1 (]: Finished running node test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c
+[0m11:11:17.081427 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:5e7f358c-c336-412b-bec1-3505fa8d24f2&page=queryresults
+[0m11:11:17.082694 [debug] [Thread-2 (]: Timing info for test.dbt_robert.unique_dbtcustomers_id.0c18a9f245 (execute): 11:11:15.764723 => 11:11:17.082387
+[0m11:11:17.083800 [info ] [Thread-2 (]: 8 of 8 PASS unique_dbtcustomers_id ............................................. [[32mPASS[0m in 1.33s]
+[0m11:11:17.085115 [debug] [Thread-2 (]: Finished running node test.dbt_robert.unique_dbtcustomers_id.0c18a9f245
+[0m11:11:17.087511 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:11:17.087916 [debug] [MainThread]: Connection 'test.dbt_robert.unique_dbtcustomers_first_order_at.aaf4f1394c' was properly closed.
+[0m11:11:17.088286 [debug] [MainThread]: Connection 'test.dbt_robert.unique_dbtcustomers_id.0c18a9f245' was properly closed.
+[0m11:11:17.088777 [info ] [MainThread]: 
+[0m11:11:17.089394 [info ] [MainThread]: Finished running 8 tests in 0 hours 0 minutes and 7.27 seconds (7.27s).
+[0m11:11:17.091993 [debug] [MainThread]: Command end result
+[0m11:11:17.103622 [info ] [MainThread]: 
+[0m11:11:17.104373 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:11:17.104992 [info ] [MainThread]: 
+[0m11:11:17.105793 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m11:11:17.106865 [debug] [MainThread]: Command `dbt test` succeeded at 11:11:17.106730 after 7.93 seconds
+[0m11:11:17.107534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4f99a290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4c499540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf4c4996f0>]}
+[0m11:11:17.108257 [debug] [MainThread]: Flushing usage events

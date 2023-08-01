@@ -16,5 +16,23 @@ models:
       - name: name
         description: Customer name
         tests: 
+          - not_null
+
+      - name: email
+        description: customer main contact email address
+        tests:
+          - not_null
           - unique
+
+      - name: first_order_at
+        description: first order date and also when they first became a customer
+        tests: 
+          - not_null
+          - unique
+
+      - name: number_of_orders
+        description: total number of orders by customer
+        tests:
+          - not_null
+
 
