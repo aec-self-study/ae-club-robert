@@ -1,0 +1,11 @@
+version: 2
+
+sources: 
+  - name: dbt_robert
+    project: aec-students
+    tables: 
+      - name: advanced_sql_exercises
+        freshness: 
+          warn_after:
+           count: 12
+           period: hour
