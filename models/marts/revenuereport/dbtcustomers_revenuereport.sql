@@ -6,10 +6,10 @@ select
 C.id
 ,C.name
 ,C.email 
-,O.created_at
+,O.created_at as sold_at
 ,format_date('%G-%V', O.created_at) as year_week_ordercreated
-,P.category
-,PP.price
+,P.category as product_category
+,PP.price as amount
 ,dbtC.is_returning_customer
 ,dbtC.number_of_orders
 

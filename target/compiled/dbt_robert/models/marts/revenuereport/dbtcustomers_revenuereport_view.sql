@@ -1,23 +1,13 @@
 
-  
-    
-
-    create or replace table `aec-students`.`dbt_robert`.`dbtcustomers_revenuereport`
-    
-    
-
-    OPTIONS()
-    as (
-      
 
 select
 C.id
 ,C.name
 ,C.email 
-,O.created_at as sold_at
+,O.created_at
 ,format_date('%G-%V', O.created_at) as year_week_ordercreated
-,P.category as product_category
-,PP.price as amount
+,P.category
+,PP.price
 ,dbtC.is_returning_customer
 ,dbtC.number_of_orders
 
@@ -37,5 +27,3 @@ left join `aec-students.dbt_robert.dbtcustomers` as dbtC on C.id = dbtC.id
 
 --order by first_order_at 
 limit 25
-    );
-  

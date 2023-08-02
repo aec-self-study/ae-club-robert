@@ -18,3 +18,8 @@ sources:
           warn_after:
            count: 12
            period: hour
+
+  - name: dbt_robert
+    project: aec-students
+    tables: 
+      - name: coffee_jinja
