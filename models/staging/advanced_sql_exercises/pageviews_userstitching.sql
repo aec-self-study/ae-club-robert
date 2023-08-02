@@ -18,7 +18,7 @@ with pageviews as (
 ),
 
 visitors as (
-    select * from {{ ref('visitors_userstitching') }}
+    select * from {{ ref('visitors_sessionization') }}
 ),
 
 joined as (

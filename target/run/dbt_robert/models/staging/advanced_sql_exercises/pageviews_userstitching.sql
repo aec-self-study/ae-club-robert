@@ -26,7 +26,7 @@ with pageviews as (
 ),
 
 visitors as (
-    select * from `aec-students`.`dbt_robert`.`visitors_userstitching`
+    select * from `aec-students`.`dbt_robert`.`visitors_sessionization`
 ),
 
 joined as (
