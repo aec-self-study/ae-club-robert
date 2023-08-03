@@ -1,9 +1,9 @@
-{{config(
-    materialized= 'table'
-)}}
 
-select
---latest one 3
+
+  create or replace view `aec-students`.`dbt_robert`.`customers`
+  OPTIONS()
+  as select 
+
 C.id
 ,C.name
 ,C.email 
@@ -18,4 +18,5 @@ C.id
 ,C.name
 ,C.email
 
-order by first_order_at limit 5
+order by first_order_at limit 5;
+

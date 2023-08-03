@@ -1,0 +1,11 @@
+version: 2
+
+sources: 
+  - name: web_tracking
+    project: analytics-engineers-club
+    tables: 
+      - name: pageviews
+      ##  freshness: 
+      ##    warn_after:
+      ##     count: 12
+      ##     period: hour

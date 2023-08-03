@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: product_price_history
+    description: table created so as to add a test (mutually_exclusive_ranges) so that the table only has one price at any point in time and not a range.
+    tests:
+      - dbt_utils.mutually_exclusive_ranges:
+          lower_bound_column: created_at
+          upper_bound_column: ended_at
+          partition_by: product_id
+          gaps: not_allowed
+
+
+
+
