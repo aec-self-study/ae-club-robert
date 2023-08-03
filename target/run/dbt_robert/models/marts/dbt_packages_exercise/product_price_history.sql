@@ -3,7 +3,7 @@
   create or replace view `aec-students`.`dbt_robert`.`product_price_history`
   OPTIONS()
   as select 
-
+--test
 id,
 product_id,
 price,
