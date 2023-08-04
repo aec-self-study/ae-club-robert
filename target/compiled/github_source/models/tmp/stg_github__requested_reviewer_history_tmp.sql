@@ -1,2 +1,2 @@
 select *
-from `aec-students`.`github`.`requested_reviewer_history`
+from `analytics-engineers-club`.`github`.`requested_reviewer_history`

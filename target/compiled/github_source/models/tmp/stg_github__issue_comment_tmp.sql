@@ -1,2 +1,2 @@
 select *
-from `aec-students`.`github`.`issue_comment`
+from `analytics-engineers-club`.`github`.`issue_comment`
