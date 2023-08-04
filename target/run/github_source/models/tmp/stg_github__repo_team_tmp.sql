@@ -5,5 +5,5 @@
   as 
 
 select * 
-from `analytics-engineers-club`.`github`.`repo_team`;
+from `aec-students`.`github`.`repo_team`;
 
