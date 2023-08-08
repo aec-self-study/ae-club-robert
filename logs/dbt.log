@@ -42751,3 +42751,899 @@ drop table if exists `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_f
 [0m16:31:25.248728 [debug] [MainThread]: Command `dbt snapshot` succeeded at 16:31:25.248616 after 11.93 seconds
 [0m16:31:25.249091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff03447e3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0316b5660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0312e0df0>]}
 [0m16:31:25.249506 [debug] [MainThread]: Flushing usage events
+[0m16:35:04.223705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2d4ce320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2c1ce3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2c1ce380>]}
+
+
+============================== 16:35:04.227686 | cec844ed-a30e-4bd9-822c-d95290c9ae8d ==============================
+[0m16:35:04.227686 [info ] [MainThread]: Running with dbt=1.5.3
+[0m16:35:04.228402 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/logs', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:35:04.552175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cec844ed-a30e-4bd9-822c-d95290c9ae8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2d208b20>]}
+[0m16:35:04.570423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cec844ed-a30e-4bd9-822c-d95290c9ae8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a6b6350>]}
+[0m16:35:04.571137 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m16:35:04.622445 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m16:35:04.694280 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:35:04.694724 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:35:04.740862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cec844ed-a30e-4bd9-822c-d95290c9ae8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a32c130>]}
+[0m16:35:04.764808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cec844ed-a30e-4bd9-822c-d95290c9ae8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a2e0640>]}
+[0m16:35:04.765354 [info ] [MainThread]: Found 48 models, 45 tests, 1 snapshot, 0 analyses, 602 macros, 0 operations, 0 seed files, 22 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:35:04.765904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cec844ed-a30e-4bd9-822c-d95290c9ae8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a2e0700>]}
+[0m16:35:04.768661 [info ] [MainThread]: 
+[0m16:35:04.769540 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:35:04.770625 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m16:35:04.771076 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:35:05.771550 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert)
+[0m16:35:05.772520 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert_snapshots'
+[0m16:35:05.773051 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:35:05.773540 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:35:06.196865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cec844ed-a30e-4bd9-822c-d95290c9ae8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a2d7790>]}
+[0m16:35:06.197821 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:35:06.198349 [info ] [MainThread]: 
+[0m16:35:06.201940 [debug] [Thread-1 (]: Began running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:35:06.202529 [info ] [Thread-1 (]: 1 of 1 START snapshot dbt_robert_snapshots.favorite_ice_cream_flavors .......... [RUN]
+[0m16:35:06.204419 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now snapshot.dbt_robert.favorite_ice_cream_flavors)
+[0m16:35:06.204858 [debug] [Thread-1 (]: Began compiling node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:35:06.208927 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (compile): 16:35:06.205125 => 16:35:06.208683
+[0m16:35:06.209565 [debug] [Thread-1 (]: Began executing node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:35:06.252631 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:35:06.644032 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+        
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      with snapshot_query as (
+
+        
+
+select 
+*
+from 
+--`analytics-engineers-club.advanced_dbt_examples.favorite_ice_cream_flavors`
+`analytics-engineers-club`.`advanced_dbt_examples`.`favorite_ice_cream_flavors`
+--where github_username = 'rschembri'
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            github_username as dbt_unique_key
+
+        from `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            nullif(updated_at, updated_at) as dbt_valid_to,
+            to_hex(md5(concat(coalesce(cast(github_username as string), ''), '|',coalesce(cast(updated_at as string), '')))) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            updated_at as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data.dbt_valid_from < source_data.updated_at)
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data.dbt_valid_from < source_data.updated_at)
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    );
+  
+    
+[0m16:35:10.490610 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:aa867f96-0a7e-4640-8022-d8b3116f7b43&page=queryresults
+[0m16:35:10.967028 [debug] [Thread-1 (]: BigQuery adapter: Adding columns ([]) to table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`".
+[0m16:35:11.850720 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.dbt_robert.favorite_ice_cream_flavors"
+[0m16:35:11.851591 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+      merge into `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors` as DBT_INTERNAL_DEST
+    using `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+        values (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+
+
+  
+[0m16:35:14.419332 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:be77fc93-46ca-41af-84bc-9991b9b0628a&page=queryresults
+[0m16:35:14.438865 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+drop table if exists `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+[0m16:35:15.224131 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:43bc5e0b-3eda-405e-8c35-04a435a8503c&page=queryresults
+[0m16:35:15.225513 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (execute): 16:35:06.210063 => 16:35:15.225301
+[0m16:35:15.226309 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cec844ed-a30e-4bd9-822c-d95290c9ae8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a1ff010>]}
+[0m16:35:15.227430 [info ] [Thread-1 (]: 1 of 1 OK snapshotted dbt_robert_snapshots.favorite_ice_cream_flavors .......... [[32msuccess[0m in 9.02s]
+[0m16:35:15.228733 [debug] [Thread-1 (]: Finished running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:35:15.231612 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:35:15.231969 [debug] [MainThread]: Connection 'snapshot.dbt_robert.favorite_ice_cream_flavors' was properly closed.
+[0m16:35:15.232289 [debug] [MainThread]: Connection 'list_aec-students_dbt_robert_snapshots' was properly closed.
+[0m16:35:15.232638 [info ] [MainThread]: 
+[0m16:35:15.233129 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 10.46 seconds (10.46s).
+[0m16:35:15.233932 [debug] [MainThread]: Command end result
+[0m16:35:15.251988 [info ] [MainThread]: 
+[0m16:35:15.252582 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:35:15.253062 [info ] [MainThread]: 
+[0m16:35:15.253618 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:35:15.254340 [debug] [MainThread]: Command `dbt snapshot` succeeded at 16:35:15.254225 after 11.04 seconds
+[0m16:35:15.254726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2d4ce320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a6b6350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efe2a2e0820>]}
+[0m16:35:15.255130 [debug] [MainThread]: Flushing usage events
+[0m16:38:01.955900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f367bd46440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f367acca4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f367acca4a0>]}
+
+
+============================== 16:38:01.958360 | a58cb6a7-a496-435f-b934-4d24b696c112 ==============================
+[0m16:38:01.958360 [info ] [MainThread]: Running with dbt=1.5.3
+[0m16:38:01.959054 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'profiles_dir': '/home/vscode/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:38:02.280697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a58cb6a7-a496-435f-b934-4d24b696c112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36791ab220>]}
+[0m16:38:02.311719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a58cb6a7-a496-435f-b934-4d24b696c112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36791b3a30>]}
+[0m16:38:02.312804 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m16:38:02.372168 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m16:38:02.442316 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:38:02.442788 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:38:02.487815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a58cb6a7-a496-435f-b934-4d24b696c112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3678e2fdf0>]}
+[0m16:38:02.511523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a58cb6a7-a496-435f-b934-4d24b696c112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3678ddc490>]}
+[0m16:38:02.512070 [info ] [MainThread]: Found 48 models, 45 tests, 1 snapshot, 0 analyses, 602 macros, 0 operations, 0 seed files, 22 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:38:02.512594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a58cb6a7-a496-435f-b934-4d24b696c112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3678ddce20>]}
+[0m16:38:02.515399 [info ] [MainThread]: 
+[0m16:38:02.516277 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:38:02.517400 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m16:38:02.517887 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:38:03.597810 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert_snapshots)
+[0m16:38:03.599203 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert'
+[0m16:38:03.599753 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:38:03.600235 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:38:04.052033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a58cb6a7-a496-435f-b934-4d24b696c112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f36791a8340>]}
+[0m16:38:04.052914 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:38:04.053489 [info ] [MainThread]: 
+[0m16:38:04.056525 [debug] [Thread-1 (]: Began running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:38:04.057080 [info ] [Thread-1 (]: 1 of 1 START snapshot dbt_robert_snapshots.favorite_ice_cream_flavors .......... [RUN]
+[0m16:38:04.057999 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now snapshot.dbt_robert.favorite_ice_cream_flavors)
+[0m16:38:04.058410 [debug] [Thread-1 (]: Began compiling node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:38:04.063039 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (compile): 16:38:04.058695 => 16:38:04.062796
+[0m16:38:04.063501 [debug] [Thread-1 (]: Began executing node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:38:04.100960 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:38:04.526004 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+        
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      with snapshot_query as (
+
+        
+
+select 
+*
+from 
+--`analytics-engineers-club.advanced_dbt_examples.favorite_ice_cream_flavors`
+`analytics-engineers-club`.`advanced_dbt_examples`.`favorite_ice_cream_flavors`
+--where github_username = 'rschembri'
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            github_username as dbt_unique_key
+
+        from `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            nullif(updated_at, updated_at) as dbt_valid_to,
+            to_hex(md5(concat(coalesce(cast(github_username as string), ''), '|',coalesce(cast(updated_at as string), '')))) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            updated_at as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data.dbt_valid_from < source_data.updated_at)
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data.dbt_valid_from < source_data.updated_at)
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    );
+  
+    
+[0m16:38:08.078695 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:973b938d-c317-421f-b072-3af9d508e35c&page=queryresults
+[0m16:38:08.596664 [debug] [Thread-1 (]: BigQuery adapter: Adding columns ([]) to table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`".
+[0m16:38:09.476158 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.dbt_robert.favorite_ice_cream_flavors"
+[0m16:38:09.477010 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+      merge into `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors` as DBT_INTERNAL_DEST
+    using `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+        values (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+
+
+  
+[0m16:38:12.080365 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:e65fa2b0-aa1f-4ed6-be1e-3c7437676c90&page=queryresults
+[0m16:38:12.099521 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+drop table if exists `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+[0m16:38:12.887461 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:b6f4aa4f-d659-4868-973f-8a39d257d740&page=queryresults
+[0m16:38:12.888815 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (execute): 16:38:04.063782 => 16:38:12.888612
+[0m16:38:12.889646 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a58cb6a7-a496-435f-b934-4d24b696c112', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3678dee7a0>]}
+[0m16:38:12.890447 [info ] [Thread-1 (]: 1 of 1 OK snapshotted dbt_robert_snapshots.favorite_ice_cream_flavors .......... [[32msuccess[0m in 8.83s]
+[0m16:38:12.891285 [debug] [Thread-1 (]: Finished running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:38:12.892904 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:38:12.893279 [debug] [MainThread]: Connection 'list_aec-students_dbt_robert_snapshots' was properly closed.
+[0m16:38:12.893608 [debug] [MainThread]: Connection 'snapshot.dbt_robert.favorite_ice_cream_flavors' was properly closed.
+[0m16:38:12.893945 [info ] [MainThread]: 
+[0m16:38:12.894384 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 10.38 seconds (10.38s).
+[0m16:38:12.895124 [debug] [MainThread]: Command end result
+[0m16:38:12.912821 [info ] [MainThread]: 
+[0m16:38:12.913452 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:38:12.913940 [info ] [MainThread]: 
+[0m16:38:12.914436 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:38:12.915165 [debug] [MainThread]: Command `dbt snapshot` succeeded at 16:38:12.915052 after 10.97 seconds
+[0m16:38:12.915538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f367bd46440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f367916bc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3678ddcee0>]}
+[0m16:38:12.915948 [debug] [MainThread]: Flushing usage events
+[0m16:38:56.769582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f67847ae440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6783a3e4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6783a3e4a0>]}
+
+
+============================== 16:38:56.772036 | 42485335-82aa-4d4b-a69a-2f679aef88a3 ==============================
+[0m16:38:56.772036 [info ] [MainThread]: Running with dbt=1.5.3
+[0m16:38:56.772758 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:38:57.098546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '42485335-82aa-4d4b-a69a-2f679aef88a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f67846d9f60>]}
+[0m16:38:57.116699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '42485335-82aa-4d4b-a69a-2f679aef88a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6781be1b10>]}
+[0m16:38:57.117524 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m16:38:57.225146 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m16:38:57.327060 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:38:57.328090 [debug] [MainThread]: Partial parsing: updated file: dbt_robert://snapshots/icecream_flavor_snapshot.sql
+[0m16:38:57.433992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '42485335-82aa-4d4b-a69a-2f679aef88a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f67817300d0>]}
+[0m16:38:57.456879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '42485335-82aa-4d4b-a69a-2f679aef88a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f678180c9a0>]}
+[0m16:38:57.457512 [info ] [MainThread]: Found 48 models, 45 tests, 1 snapshot, 0 analyses, 602 macros, 0 operations, 0 seed files, 22 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:38:57.458072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '42485335-82aa-4d4b-a69a-2f679aef88a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f678180ca90>]}
+[0m16:38:57.460896 [info ] [MainThread]: 
+[0m16:38:57.461801 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:38:57.463080 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m16:38:57.463603 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:38:58.558241 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert)
+[0m16:38:58.559209 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert_snapshots'
+[0m16:38:58.559699 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:38:58.560158 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:38:59.009416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '42485335-82aa-4d4b-a69a-2f679aef88a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6781be0ac0>]}
+[0m16:38:59.010334 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:38:59.010868 [info ] [MainThread]: 
+[0m16:38:59.016616 [debug] [Thread-1 (]: Began running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:38:59.017270 [info ] [Thread-1 (]: 1 of 1 START snapshot dbt_robert_snapshots.favorite_ice_cream_flavors .......... [RUN]
+[0m16:38:59.018497 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert, now snapshot.dbt_robert.favorite_ice_cream_flavors)
+[0m16:38:59.018926 [debug] [Thread-1 (]: Began compiling node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:38:59.022945 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (compile): 16:38:59.019186 => 16:38:59.022635
+[0m16:38:59.023457 [debug] [Thread-1 (]: Began executing node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:38:59.062683 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:38:59.459671 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+        
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      with snapshot_query as (
+
+        
+
+select 
+*
+from 
+--`analytics-engineers-club.advanced_dbt_examples.favorite_ice_cream_flavors`
+`analytics-engineers-club`.`advanced_dbt_examples`.`favorite_ice_cream_flavors`
+
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            github_username as dbt_unique_key
+
+        from `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            nullif(updated_at, updated_at) as dbt_valid_to,
+            to_hex(md5(concat(coalesce(cast(github_username as string), ''), '|',coalesce(cast(updated_at as string), '')))) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            updated_at as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data.dbt_valid_from < source_data.updated_at)
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data.dbt_valid_from < source_data.updated_at)
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    );
+  
+    
+[0m16:39:03.036233 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:de840772-b135-49fe-add3-9e9a52cf664e&page=queryresults
+[0m16:39:03.521268 [debug] [Thread-1 (]: BigQuery adapter: Adding columns ([]) to table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`".
+[0m16:39:04.365580 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.dbt_robert.favorite_ice_cream_flavors"
+[0m16:39:04.368137 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+      merge into `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors` as DBT_INTERNAL_DEST
+    using `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+        values (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+
+
+  
+[0m16:39:08.212127 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:9f79e9af-0812-4100-afb7-77dac3a8e66a&page=queryresults
+[0m16:39:08.230855 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+drop table if exists `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+[0m16:39:08.996977 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:b8503668-6e0b-4306-8a37-9ff0829992d1&page=queryresults
+[0m16:39:08.998346 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (execute): 16:38:59.023725 => 16:39:08.998141
+[0m16:39:08.999137 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '42485335-82aa-4d4b-a69a-2f679aef88a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6781802da0>]}
+[0m16:39:08.999927 [info ] [Thread-1 (]: 1 of 1 OK snapshotted dbt_robert_snapshots.favorite_ice_cream_flavors .......... [[32msuccess[0m in 9.98s]
+[0m16:39:09.000758 [debug] [Thread-1 (]: Finished running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:39:09.002468 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:39:09.003600 [debug] [MainThread]: Connection 'snapshot.dbt_robert.favorite_ice_cream_flavors' was properly closed.
+[0m16:39:09.003931 [debug] [MainThread]: Connection 'list_aec-students_dbt_robert_snapshots' was properly closed.
+[0m16:39:09.004281 [info ] [MainThread]: 
+[0m16:39:09.004778 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 11.54 seconds (11.54s).
+[0m16:39:09.005578 [debug] [MainThread]: Command end result
+[0m16:39:09.025559 [info ] [MainThread]: 
+[0m16:39:09.026202 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:39:09.026772 [info ] [MainThread]: 
+[0m16:39:09.027254 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:39:09.027980 [debug] [MainThread]: Command `dbt snapshot` succeeded at 16:39:09.027866 after 12.27 seconds
+[0m16:39:09.028351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f67847ae440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f678182b190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f678181c6d0>]}
+[0m16:39:09.028742 [debug] [MainThread]: Flushing usage events
+[0m16:39:47.464915 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1d175e380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1d06c6410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1d06c63e0>]}
+
+
+============================== 16:39:47.467491 | ad5ed6c9-98cc-4e65-97c7-c6c1df125572 ==============================
+[0m16:39:47.467491 [info ] [MainThread]: Running with dbt=1.5.3
+[0m16:39:47.468203 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/vscode/dbt_robert_project/logs', 'version_check': 'True', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:39:47.794019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ad5ed6c9-98cc-4e65-97c7-c6c1df125572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1d1696020>]}
+[0m16:39:47.815130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ad5ed6c9-98cc-4e65-97c7-c6c1df125572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1cebb1390>]}
+[0m16:39:47.815897 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m16:39:47.867497 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m16:39:47.950867 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m16:39:47.952909 [debug] [MainThread]: Partial parsing: added file: dbt_robert://snapshots/icecream_flavor_snapshot2.sql
+[0m16:39:47.953663 [debug] [MainThread]: Partial parsing: deleted file: dbt_robert://snapshots/icecream_flavor_snapshot.sql
+[0m16:39:48.063460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ad5ed6c9-98cc-4e65-97c7-c6c1df125572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1ce7080d0>]}
+[0m16:39:48.086290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ad5ed6c9-98cc-4e65-97c7-c6c1df125572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1ce7dcbb0>]}
+[0m16:39:48.086913 [info ] [MainThread]: Found 48 models, 45 tests, 1 snapshot, 0 analyses, 602 macros, 0 operations, 0 seed files, 22 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:39:48.087506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad5ed6c9-98cc-4e65-97c7-c6c1df125572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1ce7dcca0>]}
+[0m16:39:48.092272 [info ] [MainThread]: 
+[0m16:39:48.093512 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:39:48.095079 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m16:39:48.095682 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:39:49.179523 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert)
+[0m16:39:49.180563 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert_snapshots'
+[0m16:39:49.181060 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:39:49.181541 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:39:49.591562 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ad5ed6c9-98cc-4e65-97c7-c6c1df125572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1ce7dc910>]}
+[0m16:39:49.592804 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:39:49.593391 [info ] [MainThread]: 
+[0m16:39:49.599144 [debug] [Thread-1 (]: Began running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:39:49.599781 [info ] [Thread-1 (]: 1 of 1 START snapshot dbt_robert_snapshots.favorite_ice_cream_flavors .......... [RUN]
+[0m16:39:49.600588 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_snapshots, now snapshot.dbt_robert.favorite_ice_cream_flavors)
+[0m16:39:49.601008 [debug] [Thread-1 (]: Began compiling node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:39:49.606265 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (compile): 16:39:49.601306 => 16:39:49.606021
+[0m16:39:49.606730 [debug] [Thread-1 (]: Began executing node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:39:49.657635 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:39:50.050628 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+        
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      with snapshot_query as (
+
+        
+
+select 
+*
+from 
+--`analytics-engineers-club.advanced_dbt_examples.favorite_ice_cream_flavors`
+`analytics-engineers-club`.`advanced_dbt_examples`.`favorite_ice_cream_flavors`
+
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            github_username as dbt_unique_key
+
+        from `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            nullif(updated_at, updated_at) as dbt_valid_to,
+            to_hex(md5(concat(coalesce(cast(github_username as string), ''), '|',coalesce(cast(updated_at as string), '')))) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            updated_at as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data.dbt_valid_from < source_data.updated_at)
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data.dbt_valid_from < source_data.updated_at)
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    );
+  
+    
+[0m16:39:53.823040 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:c6f6d60f-ad82-45df-ad95-0bff8f3cd0da&page=queryresults
+[0m16:39:54.326943 [debug] [Thread-1 (]: BigQuery adapter: Adding columns ([]) to table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`".
+[0m16:39:55.221848 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.dbt_robert.favorite_ice_cream_flavors"
+[0m16:39:55.222694 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+      merge into `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors` as DBT_INTERNAL_DEST
+    using `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+        values (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+
+
+  
+[0m16:39:57.856895 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:b1ace944-d788-4905-9d9d-782c36e6ff9c&page=queryresults
+[0m16:39:57.875344 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+drop table if exists `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+[0m16:39:58.624261 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:0a817c2a-c067-44eb-be09-5239d6296d54&page=queryresults
+[0m16:39:58.625689 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (execute): 16:39:49.607290 => 16:39:58.625477
+[0m16:39:58.626499 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ad5ed6c9-98cc-4e65-97c7-c6c1df125572', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1ce7d2fb0>]}
+[0m16:39:58.627317 [info ] [Thread-1 (]: 1 of 1 OK snapshotted dbt_robert_snapshots.favorite_ice_cream_flavors .......... [[32msuccess[0m in 9.03s]
+[0m16:39:58.628163 [debug] [Thread-1 (]: Finished running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:39:58.629922 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:39:58.630275 [debug] [MainThread]: Connection 'list_aec-students_dbt_robert' was properly closed.
+[0m16:39:58.630591 [debug] [MainThread]: Connection 'snapshot.dbt_robert.favorite_ice_cream_flavors' was properly closed.
+[0m16:39:58.630931 [info ] [MainThread]: 
+[0m16:39:58.631411 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 10.54 seconds (10.54s).
+[0m16:39:58.632199 [debug] [MainThread]: Command end result
+[0m16:39:58.651005 [info ] [MainThread]: 
+[0m16:39:58.651717 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:39:58.652245 [info ] [MainThread]: 
+[0m16:39:58.652746 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:39:58.653532 [debug] [MainThread]: Command `dbt snapshot` succeeded at 16:39:58.653409 after 11.20 seconds
+[0m16:39:58.653935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1d175e380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1d1815780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa1d2d62f20>]}
+[0m16:39:58.654348 [debug] [MainThread]: Flushing usage events
+[0m16:44:44.218543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66da0ca3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d8fc6440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d8fc6410>]}
+
+
+============================== 16:44:44.220967 | 5e32a3c5-7112-4048-bc15-9ae09c4a2d0a ==============================
+[0m16:44:44.220967 [info ] [MainThread]: Running with dbt=1.5.3
+[0m16:44:44.221709 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/vscode/dbt_robert_project/logs', 'debug': 'False', 'profiles_dir': '/home/vscode/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:44.546245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5e32a3c5-7112-4048-bc15-9ae09c4a2d0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66da0478b0>]}
+[0m16:44:44.564645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5e32a3c5-7112-4048-bc15-9ae09c4a2d0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d74b3a90>]}
+[0m16:44:44.565450 [info ] [MainThread]: Registered adapter: bigquery=1.5.3
+[0m16:44:44.616840 [debug] [MainThread]: checksum: d91324b50612e0c4823cec6657ec795d80c11aba9d5b50e83fb26de63277dec4, vars: {}, profile: , target: , version: 1.5.3
+[0m16:44:44.687252 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 0 files changed.
+[0m16:44:44.688025 [debug] [MainThread]: Partial parsing: added file: dbt_robert://snapshots/icecream_flavor_snapshot.sql
+[0m16:44:44.688400 [debug] [MainThread]: Partial parsing: deleted file: dbt_robert://snapshots/icecream_flavor_snapshot2.sql
+[0m16:44:44.791451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5e32a3c5-7112-4048-bc15-9ae09c4a2d0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d6fd00d0>]}
+[0m16:44:44.815122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5e32a3c5-7112-4048-bc15-9ae09c4a2d0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d70dc550>]}
+[0m16:44:44.815698 [info ] [MainThread]: Found 48 models, 45 tests, 1 snapshot, 0 analyses, 602 macros, 0 operations, 0 seed files, 22 sources, 0 exposures, 0 metrics, 0 groups
+[0m16:44:44.816378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5e32a3c5-7112-4048-bc15-9ae09c4a2d0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d70dce50>]}
+[0m16:44:44.819210 [info ] [MainThread]: 
+[0m16:44:44.820065 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m16:44:44.821264 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students'
+[0m16:44:44.821736 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:45.905986 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aec-students, now list_aec-students_dbt_robert)
+[0m16:44:45.906972 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_aec-students_dbt_robert_snapshots'
+[0m16:44:45.907496 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:44:45.908015 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:46.326218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5e32a3c5-7112-4048-bc15-9ae09c4a2d0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d70dcc40>]}
+[0m16:44:46.327601 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:44:46.328262 [info ] [MainThread]: 
+[0m16:44:46.333803 [debug] [Thread-1 (]: Began running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:44:46.334931 [info ] [Thread-1 (]: 1 of 1 START snapshot dbt_robert_snapshots.favorite_ice_cream_flavors .......... [RUN]
+[0m16:44:46.335896 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aec-students_dbt_robert_snapshots, now snapshot.dbt_robert.favorite_ice_cream_flavors)
+[0m16:44:46.336375 [debug] [Thread-1 (]: Began compiling node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:44:46.340770 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (compile): 16:44:46.336780 => 16:44:46.340411
+[0m16:44:46.341453 [debug] [Thread-1 (]: Began executing node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:44:46.405789 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:44:46.789776 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+        
+  
+    
+
+    create or replace table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+    
+    
+
+    OPTIONS(
+      expiration_timestamp=TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 12 hour)
+    )
+    as (
+      with snapshot_query as (
+
+        
+
+
+select 
+*
+from `analytics-engineers-club`.`advanced_dbt_examples`.`favorite_ice_cream_flavors`
+
+
+
+    ),
+
+    snapshotted_data as (
+
+        select *,
+            github_username as dbt_unique_key
+
+        from `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`
+        where dbt_valid_to is null
+
+    ),
+
+    insertions_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            nullif(updated_at, updated_at) as dbt_valid_to,
+            to_hex(md5(concat(coalesce(cast(github_username as string), ''), '|',coalesce(cast(updated_at as string), '')))) as dbt_scd_id
+
+        from snapshot_query
+    ),
+
+    updates_source_data as (
+
+        select
+            *,
+            github_username as dbt_unique_key,
+            updated_at as dbt_updated_at,
+            updated_at as dbt_valid_from,
+            updated_at as dbt_valid_to
+
+        from snapshot_query
+    ),
+
+    insertions as (
+
+        select
+            'insert' as dbt_change_type,
+            source_data.*
+
+        from insertions_source_data as source_data
+        left outer join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where snapshotted_data.dbt_unique_key is null
+           or (
+                snapshotted_data.dbt_unique_key is not null
+            and (
+                (snapshotted_data.dbt_valid_from < source_data.updated_at)
+            )
+        )
+
+    ),
+
+    updates as (
+
+        select
+            'update' as dbt_change_type,
+            source_data.*,
+            snapshotted_data.dbt_scd_id
+
+        from updates_source_data as source_data
+        join snapshotted_data on snapshotted_data.dbt_unique_key = source_data.dbt_unique_key
+        where (
+            (snapshotted_data.dbt_valid_from < source_data.updated_at)
+        )
+    )
+
+    select * from insertions
+    union all
+    select * from updates
+
+    );
+  
+    
+[0m16:44:50.315794 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:f706471e-3cda-4317-b806-9630b83bfe6c&page=queryresults
+[0m16:44:50.790243 [debug] [Thread-1 (]: BigQuery adapter: Adding columns ([]) to table `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors`".
+[0m16:44:51.594364 [debug] [Thread-1 (]: Writing runtime sql for node "snapshot.dbt_robert.favorite_ice_cream_flavors"
+[0m16:44:51.595211 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+
+      merge into `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors` as DBT_INTERNAL_DEST
+    using `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp` as DBT_INTERNAL_SOURCE
+    on DBT_INTERNAL_SOURCE.dbt_scd_id = DBT_INTERNAL_DEST.dbt_scd_id
+
+    when matched
+     and DBT_INTERNAL_DEST.dbt_valid_to is null
+     and DBT_INTERNAL_SOURCE.dbt_change_type in ('update', 'delete')
+        then update
+        set dbt_valid_to = DBT_INTERNAL_SOURCE.dbt_valid_to
+
+    when not matched
+     and DBT_INTERNAL_SOURCE.dbt_change_type = 'insert'
+        then insert (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+        values (`github_username`, `favorite_ice_cream_flavor`, `created_at`, `updated_at`, `dbt_updated_at`, `dbt_valid_from`, `dbt_valid_to`, `dbt_scd_id`)
+
+
+  
+[0m16:44:54.309781 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:39ef5c00-52a1-4fe0-abc2-5cb9de1b3149&page=queryresults
+[0m16:44:54.327899 [debug] [Thread-1 (]: On snapshot.dbt_robert.favorite_ice_cream_flavors: /* {"app": "dbt", "dbt_version": "1.5.3", "profile_name": "dbt_robert", "target_name": "dev", "node_id": "snapshot.dbt_robert.favorite_ice_cream_flavors"} */
+drop table if exists `aec-students`.`dbt_robert_snapshots`.`favorite_ice_cream_flavors__dbt_tmp`
+[0m16:44:55.383074 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=aec-students&j=bq:US:915aee4b-261f-456f-bff1-90772ff9fb31&page=queryresults
+[0m16:44:55.384478 [debug] [Thread-1 (]: Timing info for snapshot.dbt_robert.favorite_ice_cream_flavors (execute): 16:44:46.341986 => 16:44:55.384266
+[0m16:44:55.385335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5e32a3c5-7112-4048-bc15-9ae09c4a2d0a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d6f92560>]}
+[0m16:44:55.386135 [info ] [Thread-1 (]: 1 of 1 OK snapshotted dbt_robert_snapshots.favorite_ice_cream_flavors .......... [[32msuccess[0m in 9.05s]
+[0m16:44:55.387000 [debug] [Thread-1 (]: Finished running node snapshot.dbt_robert.favorite_ice_cream_flavors
+[0m16:44:55.389311 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:55.389761 [debug] [MainThread]: Connection 'list_aec-students_dbt_robert' was properly closed.
+[0m16:44:55.390159 [debug] [MainThread]: Connection 'snapshot.dbt_robert.favorite_ice_cream_flavors' was properly closed.
+[0m16:44:55.390592 [info ] [MainThread]: 
+[0m16:44:55.391519 [info ] [MainThread]: Finished running 1 snapshot in 0 hours 0 minutes and 10.57 seconds (10.57s).
+[0m16:44:55.394075 [debug] [MainThread]: Command end result
+[0m16:44:55.421691 [info ] [MainThread]: 
+[0m16:44:55.422502 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:44:55.423196 [info ] [MainThread]: 
+[0m16:44:55.423707 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:44:55.424445 [debug] [MainThread]: Command `dbt snapshot` succeeded at 16:44:55.424325 after 11.21 seconds
+[0m16:44:55.424831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66da0ca3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d9d9b9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f66d70ecb50>]}
+[0m16:44:55.425251 [debug] [MainThread]: Flushing usage events

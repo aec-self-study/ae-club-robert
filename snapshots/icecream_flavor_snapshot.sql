@@ -1,4 +1,5 @@
 {% snapshot favorite_ice_cream_flavors %}
+
 {{ config(
       target_schema='dbt_robert_snapshots',
       unique_key='github_username',
@@ -7,9 +8,7 @@
  ) }}
 select 
 *
-from 
---`analytics-engineers-club.advanced_dbt_examples.favorite_ice_cream_flavors`
-{{ source('advanced_dbt_examples', 'favorite_ice_cream_flavors') }}
---where github_username = 'rschembri'
+from {{ source('advanced_dbt_examples', 'favorite_ice_cream_flavors') }}
+
 
 {% endsnapshot %}
