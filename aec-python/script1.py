@@ -22,6 +22,11 @@ for keys, values in cal_lookup.items():
     print(keys,":", values**2)
 
 ####################
+i = 0
+while i < 10:   
+    print (i)
+    i=i+1
+####################
 
 
 cal_lookup = {'apple':95, 'banana':105, 'orange':45}
