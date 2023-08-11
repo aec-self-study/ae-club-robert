@@ -68,3 +68,16 @@ def describe_evenness(x):
         print("It's neither even nor odd")
 
 ######################
+import random
+denoms = list(range(10))
+random.shuffle(denoms)
+
+for i in range (10):
+    x=denoms[i]
+    try:
+        result = 100/x
+    except:
+        breakpoint()
+    print(result)
+
+    ######################
