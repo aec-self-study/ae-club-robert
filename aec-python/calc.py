@@ -29,9 +29,12 @@ if args.command =="sub":
     print(f"the subtraction of values is:  {our_sub}")
 
 if args.command =="div":
-    our_div = args.ints_to_div[0] / args.ints_to_div[1]
-    print(f"the result of dividing values is:  {our_div}")
-
+    try:
+        our_div = args.ints_to_div[0] / args.ints_to_div[1]
+        print(f"the result of dividing values is:  {our_div}")
+    except ZeroDivisionError:
+       print("cannot divide")
+    
 if args.command =="mult":
     our_mult = args.ints_to_mult[0] * args.ints_to_mult[1]
     print(f"the result of multiplying values is:  {our_mult}")
